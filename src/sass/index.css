@@ -1,0 +1,90 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2f2f37;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ff6b0a;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page-header {
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  background-color: #84A278;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 45px;
+  }
+}
+
+.logo {
+  margin-left: auto;
+}
+
+.icon-menu {
+  margin-right: auto;
+  border: none;
+  background-color: #84A278;
+}
+@media screen and (min-width: 1200px) {
+  .icon-menu {
+    display: none;
+  }
+}
+
+.site-nav {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #FCFCFC;
+}
+.site-nav__item {
+  display: flex;
+}
+.site-nav__item:hover, .site-nav__item:focus {
+  color: #F8D24E;
+}
+@media screen and (max-width: 1199px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-btn {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */
