@@ -1,0 +1,174 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2f2f37;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ff6b0a;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  font-family: "Montserrat", "Times New Roman", "Verdana", "Tahoma", sans-serif;
+  font-style: normal;
+  margin: 0;
+  background-image: url("../images/bg/bg_m@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  body {
+    background-image: url("../images/bg/bg_m@2x.jpg");
+  }
+}
+@media screen and (min-width: 481px) {
+  body {
+    background-image: url("../images/body/img-1_t@1x.jpg");
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  body {
+    background-image: url("../images/body/img-1_t@2x.jpg");
+  }
+}
+@media screen and (min-width: 769px) {
+  body {
+    background-image: url("../images/body/img-1_d@1x.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  body {
+    background-image: url("../images/body/img-1_d@2x.jpg");
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+  color: inherit;
+  border-color: transparent;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title {
+  font-family: "Seymour One";
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.26;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .title {
+    font-size: 34px;
+    line-height: 1.26;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+.subtitle {
+  font-family: "Seymour One";
+  font-weight: 800;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.22;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subtitle {
+    font-size: 22px;
+    line-height: 1.22;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+  }
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}/*# sourceMappingURL=index.css.map */
