@@ -1,0 +1,5 @@
+@mixin alignment($positionAI: stretch, $positionJC: flex-start) {
+    display: flex;
+    align-items: $positionAI;
+    justify-content: $positionJC;
+  }
