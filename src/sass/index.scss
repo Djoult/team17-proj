@@ -1,10 +1,13 @@
 @import './common';
-@import './example';
 
-// utils
-@import "./utils/vars";
-@import "./utils/breakpoints";
-
+@import './utils/breakpoints';
 // base
-@import "./base/base";
-@import "./base/reset";
+@import './base/normalize';
+@import './base/base';
+@import './base/reset';
+// utils
+@import './utils/vars';
+// @import './utils/breakpoints';
+
+//components
+@import './components/body';
