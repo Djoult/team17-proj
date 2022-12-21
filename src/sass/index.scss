@@ -1,10 +1,14 @@
 @import './common';
-@import './example';
 
-// utils
-@import "./utils/vars";
-@import "./utils/breakpoints";
-
+@import './utils/breakpoints';
 // base
-@import "./base/base";
-@import "./base/reset";
+@import './base/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap');
+@import './base/base';
+@import './base/reset';
+// utils
+@import './utils/vars';
+// @import './utils/breakpoints';
+
+//components
+@import './components/body';
