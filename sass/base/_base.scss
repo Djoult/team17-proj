@@ -1,9 +1,9 @@
 body {
-    font-family: $main-font-family;
-    font-style: normal;
-    margin: 0;
-    background-color: $main-color;
-    color: $light-color;
+font-family: $main-font-family;
+font-style: normal;
+margin: 0;
+background-color: $main-color;
+color: $light-color;
 }
 
 *,
@@ -22,12 +22,10 @@ body {
     border: 2px solid;
     border-radius: 10px;
 }
-
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
 .title {
     font-family: 'Seymour One';
     font-weight: 400;
@@ -46,7 +44,6 @@ body {
         line-height: 1.25;
     }
 }
-
 .subtitle {
     font-family: 'Seymour One';
     font-weight: 800;
@@ -58,14 +55,13 @@ body {
         font-size: 22px;
         line-height: 1.22;
     }
-
+    
     @media screen and (min-width: $desktop) {
         font-size: 30px;
         line-height: 1.23;
         letter-spacing: 0.04em;
     }
 }
-
 .container {
     padding-left: 16px;
     padding-right: 16px;
