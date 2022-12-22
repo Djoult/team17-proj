@@ -1,0 +1,66 @@
+.hero {
+	padding-top: 50px;
+
+	background-color: $main-color;
+}
+.hero__title {
+	margin-bottom: 32px;
+
+	text-align: left;
+	font-size: 26px;
+	line-height: calc(33 / 26);
+	text-transform: uppercase;
+
+	color: $light-color;
+}
+
+.hero__buttons {
+	display: flex;
+	justify-content: left;
+	gap: 12px;
+}
+
+.hero__products {
+	padding: 11px 26px;
+
+	border: 2px solid $accent-color;
+	border-radius: 8px;
+	background-color: transparent;
+
+	font-weight: 600;
+	font-size: 12px;
+	line-height: calc(15 / 12);
+
+	&:hover{
+		border-color: $button-hover-color;
+	}
+}
+
+.hero__how-its-made {
+	color: $accent-color;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: calc(15 / 12);
+	text-decoration-line: underline;
+
+	background-color: transparent;
+	border: none;
+
+	&:focus{
+		color: $light-color;
+	}
+	&:hover{
+		color: $button-hover-color;
+	}
+	&:disabled{
+		color: $disabled-color;
+	}
+	
+}
+
+.hero__img {
+}
+
+.hero__dots {
+}
+
