@@ -1,0 +1,108 @@
+.section__advantages {
+  background-color: $main-color;
+  }
+  .title-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
+  .advantages {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -32px;
+    }
+  }
+  .advantages__list:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 28px;
+      }
+  }
+  .advantages__list {
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 6 * 32px) / 3);
+      margin: 32px;
+    }
+  }
+  .advantages__list::before {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
+    }
+    align-content: center;
+    content: " ";
+    width: 50px;
+    height: 50px;
+    background-color:$accent-color;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .icon-cow::before {
+    background-image: url("../images/advantages/cow.png");
+  }
+  .icon-weight::before {
+    background-image: url("../images/advantages/weight.png");
+  }
+  .icon-ice::before {
+    background-image: url("../images/advantages/ice.png");
+  }
+  .advantages__title {
+  // font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1,22;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $light-color;
+  margin-bottom: 16px;
+    @media screen and (min-width: $tablet)  {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px; 
+    }
+  }
+  .advantages__text {
+    // font-family: 'Montserrat';
+    margin-left: auto;
+    margin-right: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1,6;
+  text-align: center;
+  color: $light-color;
+  width: 230px;
+  
+  @media screen and (min-width: $tablet) {
+    font-weight: 400;
+  font-size: 14px;
+  line-height: 1,74;
+    width: 145px;  
+  }
+  @media screen and (min-width: $desktop)  {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1,76;
+  letter-spacing: 0.02em;
+  width: 250px;
+  }
+    }
+  
+  
