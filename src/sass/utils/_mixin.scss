@@ -3,3 +3,10 @@
     align-items: $positionAI;
     justify-content: $positionJC;
   }
+
+  @mixin card-set-item ($card-set-column:1, $card-set-gap: 16px) {
+    flex-basis: calc(
+        (100% - $card-set-gap * ($card-set-column - 1)) /
+          ($card-set-column)
+      );
+  }

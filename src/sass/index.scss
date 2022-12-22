@@ -5,9 +5,15 @@
 
 @import './base/base';
 @import './base/reset';
+
 // utils
 @import './utils/vars';
+@import './utils/mixin';
 
 //components
 @import './components/body';
 @import './components/container';
+@import './components/reviews';
+@import './components/contacts';
+@import './components/card-set';
+
