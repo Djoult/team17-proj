@@ -1,0 +1,80 @@
+//-------------------MOBILE VERSION------------------------//
+@media screen and (max-width: 768px) {
+    .footer{
+        background:$main-color;
+        width: 100%;
+        border-bottom: 1px solid #E1E1E1;
+    }
+  
+    .footer__titles-box{
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-style: normal;
+        & h3 {
+            font-size: 18px;
+            line-height: 22px;
+            color:$light-color;
+            margin-bottom: 16px;
+            margin-top: 0px;
+        }
+        & h2 {
+            font-size: 34px;
+            color:$light-color;
+            margin-bottom: 60px;
+            line-height: 41px;
+            letter-spacing: 0.04em;
+            margin-top: 0px;
+        }
+    }
+  
+    .footer_pre-title{
+        display: flex;
+    }
+    .footer_title{
+        display: flex;
+    }
+    .icon__box{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+    .social__icon{
+        fill: $light-color;
+    }
+    .icon__item:not(:last-child){
+        margin-right: 20px;
+    }
+  
+    .contact{
+        display: inline;
+        font-family:"Montserrat";;
+        text-align: right;
+        font-style: normal;
+        font-weight:700;
+        font-size: 12px;
+    }
+    .contact__text{
+        margin-bottom: 40px;
+        margin-top: 0px;
+  }
+    .footer__tel{
+        text-decoration: none;
+        color: $light-color;
+    }
+    .copyright {
+        margin: 0px;
+        display: grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 152%;
+        text-align: center;
+        color:$copyright-color;
+        background:$main-color;
+    }
+  }
+  
