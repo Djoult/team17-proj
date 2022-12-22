@@ -1,67 +1,77 @@
 //-------------------MOBILE VERSION------------------------//
 @media screen and (max-width: 768px) {
-    .footer{
-        background:$main-color;
+    .footer {
+        background: $main-color;
         width: 100%;
         border-bottom: 1px solid #E1E1E1;
     }
-  
-    .footer__titles-box{
+
+    .footer__titles-box {
         text-transform: uppercase;
         font-family: "Montserrat";
         font-weight: 700;
         font-style: normal;
+
         & h3 {
             font-size: 18px;
             line-height: 22px;
-            color:$light-color;
+            color: $light-color;
             margin-bottom: 16px;
             margin-top: 0px;
         }
+
         & h2 {
             font-size: 34px;
-            color:$light-color;
+            color: $light-color;
             margin-bottom: 60px;
             line-height: 41px;
             letter-spacing: 0.04em;
             margin-top: 0px;
         }
     }
-  
-    .footer_pre-title{
+
+    .footer__pre-title {
         display: flex;
     }
-    .footer_title{
+
+    .footer__title {
         display: flex;
     }
-    .icon__box{
+
+    .icon__box {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 20px;
     }
-    .social__icon{
-        fill: $light-color;
+
+    .social__icon {
+        fill: $accent-color;
     }
-    .icon__item:not(:last-child){
-        margin-right: 20px;
+
+    .icon__item:not(:last-child) {
+        margin-right: 30px;
     }
-  
-    .contact{
+
+    .contact {
         display: inline;
-        font-family:"Montserrat";;
+        font-family: "Montserrat";
+        ;
         text-align: right;
         font-style: normal;
-        font-weight:700;
+        font-weight: 700;
         font-size: 12px;
     }
-    .contact__text{
+
+    .contact__text {
         margin-bottom: 40px;
         margin-top: 0px;
-  }
-    .footer__tel{
+    }
+
+    .contact__tel {
         text-decoration: none;
         color: $light-color;
     }
+
     .copyright {
         margin: 0px;
         display: grid;
@@ -73,8 +83,105 @@
         font-size: 14px;
         line-height: 152%;
         text-align: center;
-        color:$copyright-color;
-        background:$main-color;
+        color: $copyright;
+        background: $main-color;
     }
-  }
+}
+
+
+//----------------TABLET VERSION-------------------------
+@media screen and (min-width: 768px) {
+    .footer {
+        background: $main-color;
+        width: 100%;
+        border-bottom: 1px solid #E1E1E1;
+    }
+
+    .footer__titles-box {
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-style: normal;
+        margin: 0px;
+
+        & h3 {
+            font-size: 26px;
+            color: $light-color;
+            margin-top: 0px;
+            line-height: 32px;
+            letter-spacing: 0.04em;
+            margin-bottom: 8px;
+        }
+
+        & h2 {
+            font-size: 48px;
+            color: $light-color;
+            margin: 0px;
+            line-height: 59px;
+            letter-spacing: 0.06em;
+            margin-bottom: 82px;
+        }
+    }
+
+    .footer__pre-title {
+        display: block;
+    }
+
+    .footer__title {
+        display: block;
+    }
+
+    .icon__box {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 46px;
+    }
+
+    .icon__item:not(:last-child) {
+        margin-right: 28px;
+    }
+
+    .social__icon {
+        fill: $light-color;
+    }
+
+    .social__contacts {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .contact {
+        display: inline;
+        font-family: "Montserrat";
+        text-align: right;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .contact__text {
+        margin: 0;
+    }
+
+    .contact__tel {
+        text-decoration: none;
+        color: $light-color;
+    }
+
+    .copyright {
+        padding-top: 29px;
+        padding-bottom: 19px;
+        margin: 0;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 152%;
+        text-align: center;
+        color: $copyright;
+        background: $main-color;
+    }
+}
   
