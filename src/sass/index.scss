@@ -5,11 +5,23 @@
 
 @import './base/base';
 @import './base/reset';
+
 // utils
 @import './utils/vars';
 @import './utils/animations';
+@import './utils/mixin';
+
 
 //components
 @import './components/body';
 @import './components/container';
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
+@import './components/burger-menu';
+@import './components/header-button';
 @import './components/gallery';
+@import './components/reviews';
+@import './components/contacts';
+@import './components/card-set';
+

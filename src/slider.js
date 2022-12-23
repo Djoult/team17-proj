@@ -1,4 +1,4 @@
-new Swiper('.swiper-container',{
+new Swiper('.reviews__swiper',{
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
