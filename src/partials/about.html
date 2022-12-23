@@ -44,7 +44,7 @@
             This is enough to choose ice cream and coffee for any mood!
             </p>
         </div>
-        <button type="button" class="btn btn--about">
+        <button type="button" class="btn btn--about" data-modal-open>
             Read more
             <svg class="contacts__vector" width="5px" height="10px">
             <use href="./images/icons.svg#icon-button-vector"></use>
@@ -54,3 +54,28 @@
     </div>
 </div>
 </section>
+<!-- MODAL -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal__btn-close" data-modal-close>
+        <svg class="modal__icon" width="100%" height="100%">,
+                <use href="./images/icons.svg#close-line"></use>,
+              </svg>
+      </button>
+      <p class="modal__title"><b>How it’s made?</b></p>
+      
+    </div>
+  </div>
+
+<!-- Scripts -->
+
+    
+    <script src="./js/scroll.js"></script>
+    <script src="./js/modal.js"></script>
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    
