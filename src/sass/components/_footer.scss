@@ -1,187 +1,203 @@
-//-------------------MOBILE VERSION------------------------//
-@media screen and (max-width: 768px) {
-    .footer {
-        background: $main-color;
-        width: 100%;
-        border-bottom: 1px solid #E1E1E1;
-    }
+.footer {
+    background: $main-color;
+    width: 100%;
+    border-bottom: 1px solid #E1E1E1;
+}
 
-    .footer__titles-box {
-        text-transform: uppercase;
-        font-family: "Montserrat";
-        font-weight: 700;
-        font-style: normal;
-
-        & h3 {
-            font-size: 18px;
-            line-height: 22px;
-            color: $light-color;
-            margin-bottom: 16px;
-            margin-top: 0px;
-        }
-
-        & h2 {
-            font-size: 34px;
-            color: $light-color;
-            margin-bottom: 60px;
-            line-height: 41px;
-            letter-spacing: 0.04em;
-            margin-top: 0px;
-        }
-    }
-
-    .footer__pre-title {
+.footer__info {
+    @media screen and (min-width: $desktop) {
         display: flex;
-    }
-
-    .footer__title {
-        display: flex;
-    }
-
-    .icon__box {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 20px;
-    }
-
-    .social__icon {
-        fill: $accent-color;
-    }
-
-    .icon__item:not(:last-child) {
-        margin-right: 30px;
-    }
-
-    .contact {
-        display: inline;
-        font-family: "Montserrat";
-        ;
-        text-align: right;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-    }
-
-    .contact__text {
-        margin-bottom: 40px;
-        margin-top: 0px;
-    }
-
-    .contact__tel {
-        text-decoration: none;
-        color: $light-color;
-    }
-
-    .copyright {
-        margin: 0px;
-        display: grid;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 152%;
-        text-align: center;
-        color: $copyright;
-        background: $main-color;
+        justify-content: space-between;
     }
 }
 
+.footer__titles-box {
+    @include font("Montserrat", 700, normal, uppercase);
+    width: 100%;
+    color: $light-color;
+}
 
-//----------------TABLET VERSION-------------------------
-@media screen and (min-width: 768px) {
-    .footer {
-        background: $main-color;
-        width: 100%;
-        border-bottom: 1px solid #E1E1E1;
-    }
-
-    .footer__titles-box {
-        text-transform: uppercase;
-        font-family: "Montserrat";
-        font-weight: 700;
-        font-style: normal;
-        margin: 0px;
-
-        & h3 {
-            font-size: 26px;
-            color: $light-color;
-            margin-top: 0px;
-            line-height: 32px;
-            letter-spacing: 0.04em;
-            margin-bottom: 8px;
-        }
-
-        & h2 {
-            font-size: 48px;
-            color: $light-color;
-            margin: 0px;
-            line-height: 59px;
-            letter-spacing: 0.06em;
-            margin-bottom: 82px;
-        }
-    }
-
-    .footer__pre-title {
-        display: block;
-    }
-
-    .footer__title {
-        display: block;
-    }
-
-    .icon__box {
+.footer__pre-title {
+    @media screen and (min-width: $mobile) {
         display: flex;
-        justify-content: flex-end;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 16px;
+        margin-top: 0px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        font-size: 26px;
+        margin-top: 0px;
+        line-height: 32px;
+        letter-spacing: 0.04em;
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: inline;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        margin-bottom: 14px;
+        margin-top: 0px;
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+.footer__title {
+    @media screen and (min-width: $mobile) {
+        font-size: 34px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        margin-bottom: 60px;
+        margin-top: 0px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        font-size: 48px;
+        line-height: 59px;
+        letter-spacing: 0.06em;
+        margin-bottom: 82px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: inline;
+        letter-spacing: 0.06em;
+        margin-bottom: 0px;
+        font-size: 58px;
+        line-height: 71px;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (min-width: $mobile) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $tablet) {
         margin-bottom: 46px;
     }
 
-    .icon__item:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 40px;
+    }
+}
+
+.social__item:not(:last-child) {
+    @media screen and (min-width: $mobile) {
+        margin-right: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
         margin-right: 28px;
     }
 
-    .social__icon {
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
+}
+
+.social__icon {
+    width: 100%;
+    height: 100%;
+    fill: $accent-color;
+}
+
+@media screen and (min-width: $desktop) {
+    :hover {
         fill: $light-color;
+        transition: $timing-function;
+        //cursor: auto;
+    }
+}
+
+.contact {
+    font-family: "Montserrat";
+    display: inline;
+    text-align: right;
+
+    @media screen and (min-width: $mobile) {
+        @include font(700, 12px, normal);
     }
 
-    .social__contacts {
-        display: inline-block;
-        text-align: right;
-    }
-
-    .contact {
-        display: inline;
-        font-family: "Montserrat";
-        text-align: right;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
+    @media screen and (min-width: $tablet) {
+        @include font(700, 14px, normal);
         white-space: nowrap;
         margin: 0;
     }
 
-    .contact__text {
-        margin: 0;
-    }
-
-    .contact__tel {
-        text-decoration: none;
-        color: $light-color;
-    }
-
-    .copyright {
-        padding-top: 29px;
-        padding-bottom: 19px;
-        margin: 0;
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 152%;
-        text-align: center;
-        color: $copyright;
-        background: $main-color;
+    @media screen and (min-width: $desktop) {
+        @include font(700, 16px, 0.02em, normal);
+        white-space: nowrap;
+        margin: 0px auto;
     }
 }
-  
+
+.footer__contacts {
+    display: inline-block;
+    text-align: right;
+}
+
+.contact__text {
+    color: $text-color;
+
+    @media screen and (min-width: $mobile) {
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin: 0;
+    }
+
+    @media screen and (min-width: $desktop) {}
+}
+
+.contact__tel {
+    text-decoration: none;
+    color: $light-color;
+}
+
+.copyright {
+    @include font("Montserrat", 700, 14px, normal);
+    text-align: center;
+    margin: 0px;
+    color: $copyright;
+    background: $main-color;
+
+    @media screen and (min-width: $mobile) {
+        display: grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 29px;
+        padding-bottom: 19px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 100%;
+        padding-top: 9px;
+        padding-bottom: 10px;
+        letter-spacing: 0.02em;
+    }
+}
+
+
+    
+
+
+
+
+
+
+
+
