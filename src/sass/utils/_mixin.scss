@@ -15,3 +15,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+  @mixin font {
+    font-family:"Montserrat";
+    font-stretch: normal;
+    font-weight: 700;
+    color: $light-color;
+  }
+
