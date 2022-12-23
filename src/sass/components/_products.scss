@@ -1,0 +1,129 @@
+.products {
+  &__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    outline: 1px solid red;
+  }
+
+  // .products__label
+
+  &__label {
+    display: block;
+
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+
+  // .products__title
+
+  &__title {
+    margin-bottom: 148px;
+    font-family: $additional-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: calc(38 / 30);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+}
+.products-card {
+  // .products-card__wrapper
+
+  &__wrapper {
+  }
+}
+.product {
+  &__set {
+    @extend .list;
+  }
+
+  // .product__item
+
+  &__item {
+    position: relative;
+    max-width: 480px;
+    margin-bottom: 168px;
+    padding-top: 123px;
+    padding-bottom: 16px;
+    border-radius: 24px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 200px;
+
+      top: -108px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url(../images/products/Img2_m@1x.jpg);
+      border-radius: 100px;
+    }
+    &:nth-child(1) {
+      background-color: #aec6a5;
+    }
+    &:nth-child(2) {
+      background-color: #efd478;
+    }
+    &:nth-child(3) {
+      background-color: #d6936d;
+    }
+  }
+
+  // .product__title
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+
+  // .product__text
+
+  &__text {
+    margin-bottom: 101px;
+    padding: 0 40;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $text-color;
+  }
+
+  // .product__button
+
+  &__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color: transparent;
+    border-style: none;
+  }
+
+  // .product__link
+
+  &__link {
+  }
+  &__icon {
+    display: inline-flex;
+    fill: black;
+    z-index: 1;
+  }
+}
