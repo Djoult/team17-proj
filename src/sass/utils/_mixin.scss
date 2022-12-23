@@ -1,0 +1,25 @@
+@mixin alignment($positionAI: stretch, $positionJC: flex-start) {
+  display: flex;
+  align-items: $positionAI;
+  justify-content: $positionJC;
+}
+
+@mixin card-set-item($card-set-column: 1, $card-set-gap: $card-gap) {
+  flex-basis: calc(
+    (100% - $card-set-gap * ($card-set-column - 1)) / ($card-set-column)
+  );
+}
+
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+  @mixin font {
+    font-family:"Montserrat";
+    font-stretch: normal;
+    font-weight: 700;
+    color: $light-color;
+  }
+

@@ -2,14 +2,27 @@
 
 @import './utils/breakpoints';
 // base
-@import './base/normalize';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap');
+
 @import './base/base';
 @import './base/reset';
+
 // utils
 @import './utils/vars';
-// @import './utils/breakpoints';
+@import './utils/animations';
+@import './utils/mixin';
+@import './utils/vissually-hidden';
 
 //components
 @import './components/body';
 @import './components/about';
+@import './components/container';
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
+@import './components/burger-menu';
+@import './components/header-button';
+@import './components/gallery';
+@import './components/reviews';
+@import './components/contacts';
+@import './components/card-set';
+@import './components/footer';

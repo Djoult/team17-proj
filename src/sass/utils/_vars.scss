@@ -1,12 +1,16 @@
-$main-color: #84A178;
-$light-color: #FCFCFC;
+$main-color: #84a178;
+$light-color: #fcfcfc;
 $text-color: #131313;
-$accent-color: #F8D24E;
+$accent-color: #f8d24e;
 $input-color: rgba(248, 210, 78, 0.1);
+$white-color: #fff;
 $tomato-color: #D6936D;
 $disabled-color: #ABABAB;
 $frame-color: #97AF8D;
 $button-hover-color: #0A8817;
-$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-$main-font-family: 'Montserrat', 'Times New Roman', 'Verdana', 'Tahoma', sans-serif;
+$copyright:#7A7A7A;
+$timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$main-font-family: 'Montserrat', 'Times New Roman', 'Verdana', 'Tahoma',
+  sans-serif;
 $additional-font-family: 'Seymour One';
+$card-gap: 16px;
