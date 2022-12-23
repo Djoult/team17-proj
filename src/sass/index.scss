@@ -5,9 +5,6 @@
 @import './base/normalize';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap');
 @import './base/base';
-
-@import "./header";
-
 @import './base/reset';
 // utils
 @import './utils/vars';
@@ -15,3 +12,9 @@
 
 //components
 @import './components/body';
+
+@import './header';
+@import './logo';
+@import './navigation';
+@import './burger-menu';
+@import './header-button;
