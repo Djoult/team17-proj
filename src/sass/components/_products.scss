@@ -2,20 +2,28 @@
   &__section {
     padding-top: 60px;
     padding-bottom: 60px;
-    outline: 1px solid red;
+    // outline: 1px solid red;
   }
 
   // .products__label
 
   &__label {
     display: block;
-
+    margin-bottom: 12px;
     font-weight: 800;
     font-size: 18px;
     line-height: calc(22 / 18);
     text-align: center;
     text-transform: uppercase;
     color: $text-color;
+    @media screen and (min-width=$tablet) {
+      font-size: 22px;
+      line-height: calc(27 / 22);
+    }
+    @media screen and (min-width=$desktop) {
+      font-size: 30px;
+      line-height: calc(37 / 30);
+    }
   }
 
   // .products__title
@@ -31,6 +39,16 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $text-color;
+    @media screen and (min-width=$tablet) {
+      margin-bottom: 200px;
+      font-size: 34px;
+      line-height: calc(43 / 34);
+    }
+    @media screen and (min-width=$desktop) {
+      margin-bottom: 303px;
+      font-size: 36px;
+      line-height: calc(45 / 36);
+    }
   }
 }
 .products-card {
@@ -42,42 +60,12 @@
 .product {
   &__set {
     @extend .list;
-  }
-
-  // .product__item
-
-  &__item {
-    position: relative;
-    max-width: 480px;
-    margin-bottom: 168px;
-    padding-top: 123px;
-    padding-bottom: 16px;
-    border-radius: 24px;
-    &:last-child {
-      margin-bottom: 0px;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      width: 200px;
-      height: 200px;
-
-      top: -108px;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      background-image: url(../images/products/Img2_m@1x.jpg);
-      border-radius: 100px;
-    }
-    &:nth-child(1) {
-      background-color: #aec6a5;
-    }
-    &:nth-child(2) {
-      background-color: #efd478;
-    }
-    &:nth-child(3) {
-      background-color: #d6936d;
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    @media screen and (min-width=$tablet) {
+      flex-direction: row;
+      gap: 16px;
     }
   }
 
@@ -92,12 +80,21 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $text-color;
+    @media screen and (min-width=$tablet) {
+      font-size: 22px;
+      line-height: calc(27 / 22);
+    }
+    @media screen and (min-width=$desktop) {
+      margin-bottom: 66px;
+      font-size: 30px;
+      line-height: calc(37 / 30);
+    }
   }
 
   // .product__text
 
   &__text {
-    margin-bottom: 101px;
+    // margin-bottom: 101px;
     padding: 0 40;
     font-weight: 400;
     font-size: 14px;
@@ -105,25 +102,148 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: $text-color;
+    @media screen and (min-width=$tablet) {
+      padding: 0 26;
+    }
+
+    @media screen and (min-width=$desktop) {
+      font-size: 16px;
+      padding: 0 64;
+    }
   }
 
   // .product__button
 
   &__button {
+    position: absolute;
+    bottom: 16px;
+
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-    color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     border-style: none;
-  }
-
-  // .product__link
-
-  &__link {
+    cursor: pointer;
+    @media screen and (min-width=$tablet) {
+      bottom: 12px;
+    }
+    @media screen and (min-width=$desktop) {
+      bottom: 60px;
+    }
   }
   &__icon {
-    display: inline-flex;
     fill: black;
-    z-index: 1;
+  }
+}
+.product__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: $mobile;
+  min-height: 420px;
+  padding-top: 123px;
+  padding-bottom: 16px;
+  border-radius: 24px;
+
+  &:nth-child(1) {
+    background-color: #aec6a5;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 211px;
+
+      top: -108px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      border-radius: 100px;
+      background: url(../images/products/Img1_m@1x.jpg);
+      background-size: contain;
+      @media screen and (min-width=$tablet) {
+        background: url(../images/products/Img1_t@1x.jpg);
+      }
+      @media screen and (min-width=$desktop) {
+        top: -183px;
+        width: 300px;
+        height: 318px;
+        background: url(../images/products/Img1_d@1x.jpg);
+        border-radius: 150px;
+      }
+    }
+  }
+  &:nth-child(2) {
+    background-color: #efd478;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 211px;
+
+      top: -108px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      border-radius: 100px;
+      background: url(../images/products/Img2_m@1x.jpg);
+      background-size: contain;
+      @media screen and (min-width=$tablet) {
+        background: url(../images/products/Img2_t@1x.jpg);
+      }
+      @media screen and (min-width=$desktop) {
+        top: -183px;
+        width: 300px;
+        height: 318px;
+        background: url(../images/products/Img2_d@1x.jpg);
+        border-radius: 150px;
+      }
+    }
+  }
+  &:nth-child(3) {
+    background-color: #d6936d;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 211px;
+
+      top: -108px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      border-radius: 100px;
+      background: url(../images/products/Img3_m@1x.jpg);
+      background-size: contain;
+      @media screen and (min-width=$tablet) {
+        background: url(../images/products/Img3_t@1x.jpg);
+      }
+      @media screen and (min-width=$desktop) {
+        top: -183px;
+        width: 300px;
+        height: 318px;
+        background: url(../images/products/Img3_d@1x.jpg);
+        border-radius: 150px;
+      }
+    }
+  }
+  @media screen and (min-width=$tablet) {
+    margin: 0;
+    padding-bottom: 12px;
+    min-height: 428px;
+    border-radius: 15.7808px;
+    @include card-set-item(3, 16px);
+  }
+  @media screen and (min-width=$desktop) {
+    padding-top: 165px;
+    min-height: 536px;
+    border-radius: 24px;
   }
 }
