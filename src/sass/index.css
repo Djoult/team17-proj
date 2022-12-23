@@ -1,17 +1,4 @@
-@import '~node_modules/modern-normalize/modern-normalize.css'; /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-/*
-Document
-========
-*/
-/**
-Use a better box model (opinionated).
-*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap");
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
+@import '~node_modules/modern-normalize/modern-normalize.css';
 
 /**
 1. Correct the line height in all browsers.
@@ -23,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
-     tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
 }
 
 /*
@@ -36,7 +23,8 @@ Sections
 */
 body {
   margin: 0; /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; /* 2 */
 }
 
 /*
@@ -61,7 +49,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -80,7 +68,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -154,9 +143,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -209,7 +198,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -258,7 +247,7 @@ summary {
 }
 
 .title {
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-weight: 400;
   letter-spacing: 0.04em;
   text-align: center;
@@ -278,7 +267,7 @@ summary {
 }
 
 .subtitle {
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-weight: 800;
   text-align: center;
   font-size: 18px;
@@ -347,42 +336,17 @@ img {
 }
 
 body {
-  font-family: "Montserrat", "Times New Roman", "Verdana", "Tahoma", sans-serif;
+  font-family: 'Montserrat', 'Times New Roman', 'Verdana', 'Tahoma', sans-serif;
   font-style: normal;
   margin: 0;
-  background-image: url("../images/bg/bg_m@1x.jpg");
+  background-image: url('../images/bg/bg_m@1x.jpg');
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  body {
-    background-image: url("../images/bg/bg_m@2x.jpg");
-  }
-}
-@media screen and (min-width: 481px) {
-  body {
-    background-image: url("../images/bg/bg_t@1x.jpg");
-  }
-}
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  body {
-    background-image: url("../images/bg/bg_t@2x.jpg");
-  }
-}
-@media screen and (min-width: 769px) {
-  body {
-    background-image: url("../images/bg/bg_d@1x.jpg");
-  }
-}
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  body {
-    background-image: url("../images/bg/bg_d@2x.jpg");
-  }
-}
 
 .page-header {
-  background-color: #84A278;
+  background-color: #84a278;
 }
 
 .logo {
@@ -413,11 +377,12 @@ body {
 .site-nav__link {
   padding-top: 32px;
   padding-bottom: 13px;
-  color: #FCFCFC;
+  color: #fcfcfc;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav__link:hover, .site-nav__link:focus {
-  color: #F8D24E;
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: #f8d24e;
 }
 
 .header-button {
@@ -435,7 +400,7 @@ body {
   height: 42px;
   left: 0px;
   top: 0px;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   border-radius: 10px;
   font-weight: 600;
   font-size: 14px;
@@ -448,16 +413,18 @@ body {
   margin-left: auto;
   margin-top: 20px;
   margin-bottom: 3px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-btn:hover {
-  background-color: #0A8817;
+  background-color: #0a8817;
   fill: #000000;
 }
 .header-btn:focus {
-  background-color: #0A8817;
-  color: #FCFCFC;
-  fill: #FCFCFC;
+  background-color: #0a8817;
+  color: #fcfcfc;
+  fill: #fcfcfc;
 }
 @media screen and (min-width: 768px) {
   .header-btn {
@@ -467,7 +434,7 @@ body {
 
 .menu-toggle {
   display: block;
-  background-color: #84A278;
+  background-color: #84a278;
   border: none;
   margin-top: 29px;
   margin-bottom: 5px;
@@ -476,4 +443,132 @@ body {
   .menu-toggle {
     display: none;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  body {
+    background-image: url('../images/bg/bg_d@2x.jpg');
+  }
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 705px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 968px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-wrapper__image {
+  max-width: 100%;
+}
+
+.p-wrapper {
+  padding: 35px 39px;
+  background-color: #84a178;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .p-wrapper {
+    padding: 28px 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-wrapper {
+    padding: 43px 109px;
+  }
+}
+.p-wrapper__text {
+  font-size: 12px;
+  line-height: 2.5833333333;
+  text-align: center;
+  color: #fcfcfc;
+}
+@media screen and (min-width: 768px) {
+  .p-wrapper__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.8571428571;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-wrapper__text {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.name-text {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+  text-align: center;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .name-text {
+    margin-bottom: 44px;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+}
+
+.swiper-container .swiper-pagination {
+  bottom: 0px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #84a178;
+} /*# sourceMappingURL=index.css.map */
