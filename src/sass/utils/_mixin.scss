@@ -10,3 +10,11 @@
           ($card-set-column)
       );
   }
+
+  @mixin font {
+    font-family:"Montserrat";
+    font-stretch: normal;
+    font-weight: 700;
+    color: $light-color;
+  }
+
