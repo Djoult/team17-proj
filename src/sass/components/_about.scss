@@ -257,6 +257,20 @@ color: $light-color;
 
     color: #000000;
 
+    &:hover {
+    border-color: $button-hover-color;
+    background-color: $button-hover-color;
+  }
+  &:focus {
+    border-color: $button-hover-color;
+    background-color: $button-hover-color;
+    color: $white-color;
+  }
+  &:disabled {
+    border-color: $disabled-color;
+    background-color: $disabled-color;
+  }
+
     @media screen and (min-width:$tablet) {
         display: inline-block;
     }
