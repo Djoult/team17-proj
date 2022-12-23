@@ -1,14 +1,60 @@
 <section class="hero">
-  <div class="container">
-    <h1 class="title hero__title">
-      ice cream <br />
-      made with <br />
-      passion
-    </h1>
-    <div class="hero__buttons">
-      <button class="hero__products btn" type="button">Products</button>
-      <button class="hero__how-its-made" type="button">How it’s made?</button>
+  <div class="hero__container container">
+    <div class="hero__data">
+      <div class="data__wrapper">
+        <h1 class="title hero__title">
+          ice cream <br />
+          made with <br />
+          passion
+        </h1>
+        <div class="hero__buttons">
+          <button class="hero__products btn" type="button">Products</button>
+          <button class="hero__how-its-made" type="button">
+            How it’s made?
+          </button>
+        </div>
+      </div>
+      <div class="hero__numbers">
+        <p class="hero__numeric">16</p>
+        <p class="hero__bar-type">cafes</p>
+        <p class="hero__numeric">23</p>
+        <p class="hero__bar-type">food trucks</p>
+      </div>
     </div>
+    <picture>
+      <!-- desktop version -->
+      <source
+        media="(min-width:1200px)"
+        srcset="
+          ./images/hero/img-2_d@1x.png 1x,
+          ./images/hero/img-2_d@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- tablet vetsion -->
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./images/hero/img-2_t@1x.png 1x,
+          ./images/hero/img-2_t@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- mobile version -->
+      <source
+        srcset="
+          ./images/hero/img-2_m@1x.png 1x,
+          ./images/hero/img-2_m@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="hero__dots img"
+        src="./images/hero/img-2_m@1x.png"
+        alt="Крапки"
+        width="320px"
+      />
+    </picture>
     <picture>
       <!-- desktop version -->
       <source
@@ -47,8 +93,8 @@
       <source
         media="(min-width:1200px)"
         srcset="
-          ./images/hero/img-2_d@1x.png 1x,
-          ./images/hero/img-2_d@2x.png 2x
+          ./images/hero/img-3_d@1x.png 1x,
+          ./images/hero/img-3_d@2x.png 2x
         "
         type="image/png"
       />
@@ -56,24 +102,15 @@
       <source
         media="(min-width:768px)"
         srcset="
-          ./images/hero/img-2_t@1x.png 1x,
-          ./images/hero/img-2_t@2x.png 2x
-        "
-        type="image/png"
-      />
-      <!-- mobile version -->
-      <source
-        srcset="
-          ./images/hero/img-2_m@1x.png 1x,
-          ./images/hero/img-2_m@2x.png 2x
+          ./images/hero/img-3_t@1x.png 1x,
+          ./images/hero/img-3_t@2x.png 2x
         "
         type="image/png"
       />
       <img
-        class="hero__dots img"
-        src="./images/hero/img-2_m@1x.png"
-        alt="Крапки"
-        width="100%"
+        class="hero__plate img"
+        src="./images/hero/img-3_t@1x.png"
+        alt="A plate of Ice cream"
       />
     </picture>
   </div>

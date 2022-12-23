@@ -2,7 +2,72 @@
 	padding-top: 50px;
 
 	background-color: $main-color;
+
+	@media screen and (min-width:$tablet) {
+		padding-top: 14px;
+	}
 }
+
+.hero__container{
+	margin-bottom: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+	
+	height: 456px;
+	position: relative;
+
+	@media screen and (min-width:$tablet) {
+		padding-right: 32px;
+		padding-left: 32px;
+
+		height: 349px;
+	}
+}
+
+.hero__data{
+	display: flex;
+}
+
+.data__wrapper {
+}
+
+.hero__numbers{
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	margin-top: 14px;
+	margin-left: auto;
+}
+
+.hero__numeric {
+	margin-bottom: 4px;
+
+	font-family: 'Montserrat';
+	font-weight: 900;
+	font-size: 28px;
+	line-height: calc(34 / 28);
+	text-align: right;
+	text-transform: uppercase;
+
+	color: $text-color;
+
+}
+
+.hero__bar-type {
+	margin-bottom: 20px;
+
+	font-family: 'Montserrat';
+	font-size: 8px;
+	line-height: calc(10 / 8);
+	
+	text-align: right;
+
+	color: $light-color;
+}
+
+
+
+
 .hero__title {
 	margin-bottom: 32px;
 
@@ -12,6 +77,12 @@
 	text-transform: uppercase;
 
 	color: $light-color;
+
+	@media screen and (min-width:$tablet) {
+		margin-bottom: 24px;
+	}
+	
+
 }
 
 .hero__buttons {
@@ -59,8 +130,29 @@
 }
 
 .hero__img {
+	position: absolute;
+	bottom: 0;
+	right: 12%;
+	// transform: translateX(55%);
 }
 
 .hero__dots {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@media screen and (min-width:$tablet) {
+		width: 768px;
+	}
+}
+
+.hero__plate{
+	@media screen and (max-width:767px) {
+		display: none;
+	}
+	position: absolute;
+	bottom: 12px;
+	left: 32px;
 }
 
