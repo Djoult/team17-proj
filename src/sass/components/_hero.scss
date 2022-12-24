@@ -1,4 +1,5 @@
 .hero {
+	position: relative;
 	padding-top: 50px;
 
 	background-color: $main-color;
@@ -182,6 +183,7 @@
 }
 
 .hero__dots {
+	width: 320px;
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
