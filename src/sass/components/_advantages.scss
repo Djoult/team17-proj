@@ -1,38 +1,26 @@
-.section__advantages {
+.advantages {
   background-color: $main-color;
   }
-  .title-hidden {
-    position: absolute;
-      white-space: nowrap;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      border: 0;
-      padding: 0;
-      clip: rect(0 0 0 0);
-      clip-path: inset(50%);
-      margin: -1px;
-  }
-  .advantages {
+  .advantages__list {
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       margin: -32px;
     }
   }
-  .advantages__list:not(:last-child) {
+  .advantages__item:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 28px;
       }
   }
-  .advantages__list {
+  .advantages__item {
     width: 100%;
     @media screen and (min-width: $tablet) {
       width: calc((100% - 6 * 32px) / 3);
       margin: 32px;
     }
   }
-  .advantages__list::before {
+  .advantages__item::before {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -52,14 +40,29 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  .icon-cow::before {
-    background-image: url("../images/advantages/cow.png");
+  .advantages__item:nth-child(1)::before {
+    background-image: url("../images/advantages/cow_1x.png");
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/advantages/cow_2x.png");
   }
-  .icon-weight::before {
-    background-image: url("../images/advantages/weight.png");
   }
-  .icon-ice::before {
-    background-image: url("../images/advantages/ice.png");
+  .advantages__item:nth-child(2)::before {
+    background-image: url("../images/advantages/weight_1x.png");
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/advantages/weight_2x.png");
+  }
+  }
+  .advantages__item:nth-child(3)::before {
+    background-image: url("../images/advantages/ice_1x.png");
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/advantages/ice_2x.png");
+  }
   }
   .advantages__title {
   // font-family: 'Montserrat';
