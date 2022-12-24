@@ -704,12 +704,12 @@ body {
   letter-spacing: 0.04em;
   color: #131313;
 }
-@media screen and (min-width = 768px) {
+@media screen and (min-width: 768px) {
   .product__text {
     padding: 0 26;
   }
 }
-@media screen and (min-width = 1200px) {
+@media screen and (min-width: 1200px) {
   .product__text {
     font-size: 16px;
     padding: 0 64;
@@ -723,12 +723,12 @@ body {
   border-style: none;
   cursor: pointer;
 }
-@media screen and (min-width = 768px) {
+@media screen and (min-width: 768px) {
   .product__button {
     bottom: 12px;
   }
 }
-@media screen and (min-width = 1200px) {
+@media screen and (min-width: 1200px) {
   .product__button {
     bottom: 60px;
   }
@@ -771,17 +771,17 @@ body {
     background-image: url(../images/products/Img1_m@2x.jpg);
   }
 }
-@media screen and (min-width = 768px) {
+@media screen and (min-width: 768px) {
   .product__item:nth-child(1)::before {
     background-image: url(../images/products/Img1_t@1x.jpg);
   }
 }
-@media screen and (min-width = 768px) and (min-device-pixel-ratio: 2), screen and (min-width = 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 768px) and (min-resolution: 192dpi), screen and (min-width = 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width = 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 768px) and (min-resolution: 192dpi), screen and (min-width = 768px) and (min-resolution: 2dppx) {
   .product__item:nth-child(1)::before {
     background-image: url(../images/products/Img1_t@2x.jpg);
   }
 }
-@media screen and (min-width = 1200px) {
+@media screen and (min-width: 1200px) {
   .product__item:nth-child(1)::before {
     top: -183px;
     width: 302px;
@@ -790,7 +790,7 @@ body {
     border-radius: 150px;
   }
 }
-@media screen and (min-width = 1200px) and (min-device-pixel-ratio: 2), screen and (min-width = 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 1200px) and (min-resolution: 192dpi), screen and (min-width = 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width = 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 1200px) and (min-resolution: 192dpi), screen and (min-width = 1200px) and (min-resolution: 2dppx) {
   .product__item:nth-child(1)::before {
     background-image: url(../images/products/Img1_d@2x.jpg);
   }
@@ -823,12 +823,12 @@ body {
     background-image: url(../images/products/Img2_t@1x.jpg);
   }
 }
-@media screen and (min-width = 768px) and (min-device-pixel-ratio: 2), screen and (min-width = 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 768px) and (min-resolution: 192dpi), screen and (min-width = 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width = 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 768px) and (min-resolution: 192dpi), screen and (min-width = 768px) and (min-resolution: 2dppx) {
   .product__item:nth-child(2)::before {
     background-image: url(../images/products/Img2_t@2x.jpg);
   }
 }
-@media screen and (min-width = 1200px) {
+@media screen and (min-width: 1200px) {
   .product__item:nth-child(2)::before {
     top: -183px;
     width: 302px;
@@ -837,7 +837,7 @@ body {
     border-radius: 150px;
   }
 }
-@media screen and (min-width = 1200px) and (min-device-pixel-ratio: 2), screen and (min-width = 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 1200px) and (min-resolution: 192dpi), screen and (min-width = 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width = 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 1200px) and (min-resolution: 192dpi), screen and (min-width = 1200px) and (min-resolution: 2dppx) {
   .product__item:nth-child(2)::before {
     background-image: url(../images/products/Img2_d@2x.jpg);
   }
@@ -865,17 +865,17 @@ body {
     background-image: url(../images/products/Img3_m@2x.jpg);
   }
 }
-@media screen and (min-width = 768px) {
+@media screen and (min-width: 768px) {
   .product__item:nth-child(3)::before {
     background-image: url(../images/products/Img3_t@1x.jpg);
   }
 }
-@media screen and (min-width = 768px) and (min-device-pixel-ratio: 2), screen and (min-width = 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 768px) and (min-resolution: 192dpi), screen and (min-width = 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width = 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width = 768px) and (min-resolution: 192dpi), screen and (min-width = 768px) and (min-resolution: 2dppx) {
   .product__item:nth-child(3)::before {
     background-image: url(../images/products/Img3_t@2x.jpg);
   }
 }
-@media screen and (min-width = 1200px) {
+@media screen and (min-width:1200px) {
   .product__item:nth-child(3)::before {
     top: -183px;
     width: 302px;
@@ -2258,6 +2258,7 @@ body {
   scale: 1;
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
 @media screen and (min-width: 768px) {
   .modal {
     min-width: 568px;
@@ -2334,6 +2335,8 @@ body {
   .modal__title {
     margin-bottom: 24px;
     width: 322px;
+  }
+}
 .modal__ikon {
   fill: #131313;
 }
@@ -2513,6 +2516,8 @@ body {
 @media screen and (min-width: 768px) {
   .modal__btn {
     margin-top: 32px;
+  }
+}
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -2583,4 +2588,5 @@ body {
   .menu-btn {
     display: none;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */
