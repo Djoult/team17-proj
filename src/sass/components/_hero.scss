@@ -132,8 +132,12 @@
 .hero__img {
 	position: absolute;
 	bottom: 0;
-	right: 12%;
-	// transform: translateX(55%);
+	right: 50%;
+	transform: translateX(55%);
+
+	@media screen and (min-width:$tablet) {
+		right: 31%;
+	}
 }
 
 .hero__dots {
@@ -156,3 +160,20 @@
 	left: 32px;
 }
 
+.hero__text{
+	@media screen and (max-width:767px){
+		display: none;
+	}
+
+	margin-top: 39px;
+	margin-left: 184px; 
+	width: 139px;
+// 	font-family: 'Montserrat';
+// font-style: normal;
+// font-weight: 400;
+	font-size: 12px;
+	line-height: 140%;
+
+	color: #FCFCFC;
+
+}
