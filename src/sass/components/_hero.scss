@@ -1,248 +1,240 @@
 .hero {
-	position: relative;
-	padding-top: 50px;
+  position: relative;
+  padding-top: 50px;
 
-	background-color: $main-color;
+  background-color: $main-color;
 
-	@media screen and (min-width:$tablet) {
-		padding-top: 14px;
-	}
+  @media screen and (min-width: $tablet) {
+    padding-top: 14px;
+  }
 }
 
-.hero__container{
-	margin-bottom: 100px;
-	padding-right: 20px;
-	padding-left: 20px;
-	
-	height: 456px;
-	position: relative;
+.hero__container {
+  padding-right: 20px;
+  padding-left: 20px;
 
-	@media screen and (min-width:$tablet) {
-		padding-right: 32px;
-		padding-left: 32px;
+  height: 456px;
+  position: relative;
 
-		height: 349px;
-	}
+  @media screen and (min-width: $tablet) {
+    padding-right: 32px;
+    padding-left: 32px;
 
-	@media screen and (min-width:$desktop) {
-		padding-left: 16px;
-		padding-right: 16px;
-		height: 591px;
-	}
+    height: 349px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 591px;
+  }
 }
 
-.hero__data{
-	display: flex;
+.hero__data {
+  display: flex;
 }
 
-.data__wrapper {
-}
-
-.hero__numbers{
-	@media screen and (max-width: 767px) {
-		display: none;
-	}
-	margin-top: 14px;
-	margin-left: auto;
+.hero__numbers {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin-top: 14px;
+  margin-left: auto;
 }
 
 .hero__numeric {
-	margin-bottom: 4px;
+  margin-bottom: 4px;
 
-	font-family: 'Montserrat';
-	font-weight: 900;
-	font-size: 28px;
-	line-height: calc(34 / 28);
-	text-align: right;
-	text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 28px;
+  line-height: calc(34 / 28);
+  text-align: right;
+  text-transform: uppercase;
 
-	color: $text-color;
+  color: $text-color;
 
-	@media screen and (min-width:$desktop) {	
-		font-size: 46px;
-		line-height: calc(56/46);
-	}
-
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+  }
 }
 
 .hero__bar-type {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 
-	font-family: 'Montserrat';
-	font-size: 8px;
-	line-height: calc(10 / 8);
-	
-	text-align: right;
+  font-family: 'Montserrat';
+  font-size: 8px;
+  line-height: calc(10 / 8);
 
-	color: $light-color;
+  text-align: right;
 
-	@media screen and (min-width:$desktop) {	
-		font-size: 14px;
-		line-height: calc(17/14);
-	}
+  color: $light-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
 
 .hero__title {
-	margin-bottom: 32px;
+  margin-bottom: 32px;
 
-	text-align: left;
-	font-size: 26px;
-	line-height: calc(33 / 26);
-	text-transform: uppercase;
+  text-align: left;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  text-transform: uppercase;
 
-	color: $light-color;
+  color: $light-color;
 
-	@media screen and (min-width:$tablet) {
-		margin-bottom: 24px;
-	}
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
 
-	@media screen and (min-width:$desktop) {	
-		font-size: 38px;
-		line-height: calc(48 / 37);
-		margin-bottom: 28px;
-	}
-	
-
+  @media screen and (min-width: $desktop) {
+    font-size: 38px;
+    line-height: calc(48 / 37);
+    margin-bottom: 28px;
+  }
 }
 
 .hero__buttons {
-	display: flex;
-	justify-content: left;
-	gap: 12px;
+  display: flex;
+  justify-content: left;
+  gap: 12px;
 }
 
 .hero__products {
-	padding: 11px 26px;
+  padding: 11px 26px;
 
-	border: 2px solid $accent-color;
-	border-radius: 8px;
-	background-color: transparent;
+  border: 2px solid $accent-color;
+  border-radius: 8px;
+  background-color: transparent;
 
-	font-weight: 600;
-	font-size: 12px;
-	line-height: calc(15 / 12);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
 
-	&:hover{
-		border-color: $button-hover-color;
-	}
-	
-	@media screen and (min-width: $desktop){
-		padding: 12px 37px;
-		font-size: 14px;
-		line-height: calc(18 / 14);
-		&:focus{
-			color: $light-color;
-			border-color: $button-hover-color;
-		}
-		&:disabled{
-			color: $disabled-color;
-		}
-	}
+  &:hover {
+    border-color: $button-hover-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 12px 37px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    &:focus {
+      color: $light-color;
+      border-color: $button-hover-color;
+    }
+    &:disabled {
+      color: $disabled-color;
+    }
+  }
 }
 
 .hero__how-its-made {
-	color: $accent-color;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: calc(15 / 12);
-	text-decoration-line: underline;
+  color: $accent-color;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  text-decoration-line: underline;
 
-	background-color: transparent;
-	border: none;
+  background-color: transparent;
+  border: none;
 
-	&:focus{
-		color: $light-color;
-	}
-	&:hover{
-		color: $button-hover-color;
-	}
-	&:disabled{
-		color: $disabled-color;
-	}
+  &:focus {
+    color: $light-color;
+  }
+  &:hover {
+    color: $button-hover-color;
+  }
+  &:disabled {
+    color: $disabled-color;
+  }
 
-	@media screen and (min-width: $desktop){
-	font-size: 14px;
-	line-height: calc(17 / 14);
-	}
-	
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
 
 .hero__img {
-	position: absolute;
-	bottom: 0;
-	right: 50%;
-	transform: translateX(55%);
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(55%);
 
-	@media screen and (min-width:$tablet) {
-		right: 31%;
-	}
+  @media screen and (min-width: $tablet) {
+    right: 31%;
+  }
 
-	@media screen and (min-width:$desktop) {
-		right: 29%;
-	}
+  @media screen and (min-width: $desktop) {
+    right: 29%;
+  }
 }
 
 .hero__dots {
-	width: 320px;
-	position: absolute;
-	bottom: 0px;
-	left: 50%;
-	transform: translateX(-50%);
+  width: 320px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 
-	@media screen and (min-width:$tablet) {
-		width: 768px;
-	}
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
 
-	@media screen and (min-width:$desktop) {
-		width: 1200px;
-	}
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
 }
 
-.hero__plate{
-	@media screen and (max-width:767px) {
-		display: none;
-	}
-	position: absolute;
-	bottom: 12px;
-	left: 32px;
+.hero__plate {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  position: absolute;
+  bottom: 12px;
+  left: 32px;
 
-	@media screen and (min-width:$desktop) {
-		bottom: 64px;
-		left: 16px;
-	}
+  @media screen and (min-width: $desktop) {
+    bottom: 64px;
+    left: 16px;
+  }
 }
 
-.hero__text{
-	@media screen and (max-width:767px){
-		display: none;
-	}
+.hero__text {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-	margin-top: 39px;
-	margin-left: 184px; 
-	margin-bottom: 12px;
-	width: 139px;
-	font-size: 12px;
-	line-height: 140%;
+  margin-top: 39px;
+  margin-left: 184px;
+  margin-bottom: 12px;
+  width: 139px;
+  font-size: 12px;
+  line-height: 140%;
 
-	color: $light-color;
+  color: $light-color;
 
-	@media screen and (min-width:$desktop) {
-		margin-top: 150px;
-		margin-left: 239px; 
-		margin-bottom: 24px;
-		width: 200px;
-		font-size: 14px;
-		line-height: 140%;
-	}
+  @media screen and (min-width: $desktop) {
+    margin-top: 150px;
+    margin-left: 239px;
+    margin-bottom: 24px;
+    width: 200px;
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
 
-.hero__arrow{
-	@media screen and (max-width:767px){
-		display: none;
-	}
-	margin-left: 184px;
-	fill: $light-color;
-	@media screen and (min-width:$desktop) {
-		margin-left: 239px;
-	}
+.hero__arrow {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin-left: 184px;
+  fill: $light-color;
+  @media screen and (min-width: $desktop) {
+    margin-left: 239px;
+  }
 }
