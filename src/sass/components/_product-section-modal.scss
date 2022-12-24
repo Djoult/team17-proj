@@ -1,0 +1,22 @@
+
+
+.modal__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    background-color: $accent-color;
+    border-radius: 10px;
+    border: none;
+    color: $text-color;
+    align-items: center;
+    width: 121px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 32px;
+    }
+}
