@@ -24,6 +24,8 @@
 	}
 
 	@media screen and (min-width:$desktop) {
+		padding-left: 16px;
+		padding-right: 16px;
 		height: 591px;
 	}
 }
@@ -55,6 +57,11 @@
 
 	color: $text-color;
 
+	@media screen and (min-width:$desktop) {	
+		font-size: 46px;
+		line-height: calc(56/46);
+	}
+
 }
 
 .hero__bar-type {
@@ -67,6 +74,11 @@
 	text-align: right;
 
 	color: $light-color;
+
+	@media screen and (min-width:$desktop) {	
+		font-size: 14px;
+		line-height: calc(17/14);
+	}
 }
 
 .hero__title {
@@ -116,14 +128,15 @@
 	@media screen and (min-width: $desktop){
 		padding: 12px 37px;
 		font-size: 14px;
-		line-height: calc(18 / 14)
+		line-height: calc(18 / 14);
+		&:focus{
+			color: $light-color;
+			border-color: $button-hover-color;
+		}
+		&:disabled{
+			color: $disabled-color;
+		}
 	}
-
-	&:focus{
-		@media screen and (min-width: $desktop){
-		color: $light-color;
-	}
-}
 }
 
 .hero__how-its-made {
@@ -145,6 +158,11 @@
 	&:disabled{
 		color: $disabled-color;
 	}
+
+	@media screen and (min-width: $desktop){
+	font-size: 14px;
+	line-height: calc(17 / 14);
+	}
 	
 }
 
@@ -157,6 +175,10 @@
 	@media screen and (min-width:$tablet) {
 		right: 31%;
 	}
+
+	@media screen and (min-width:$desktop) {
+		right: 29%;
+	}
 }
 
 .hero__dots {
@@ -168,6 +190,10 @@
 	@media screen and (min-width:$tablet) {
 		width: 768px;
 	}
+
+	@media screen and (min-width:$desktop) {
+		width: 1200px;
+	}
 }
 
 .hero__plate{
@@ -177,6 +203,11 @@
 	position: absolute;
 	bottom: 12px;
 	left: 32px;
+
+	@media screen and (min-width:$desktop) {
+		bottom: 64px;
+		left: 16px;
+	}
 }
 
 .hero__text{
@@ -192,13 +223,24 @@
 	line-height: 140%;
 
 	color: $light-color;
+
+	@media screen and (min-width:$desktop) {
+		margin-top: 150px;
+		margin-left: 239px; 
+		margin-bottom: 24px;
+		width: 200px;
+		font-size: 14px;
+		line-height: 140%;
+	}
 }
 
 .hero__arrow{
 	@media screen and (max-width:767px){
 		display: none;
 	}
-
 	margin-left: 184px;
 	fill: $light-color;
+	@media screen and (min-width:$desktop) {
+		margin-left: 239px;
+	}
 }
