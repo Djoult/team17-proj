@@ -1,196 +1,128 @@
 .footer {
-    background: $main-color;
-    width: 100%;
-    border-bottom: 1px solid #E1E1E1;
-}
+    outline: 1px solid #E1E1E1;
+    padding-bottom: 12px;
+    background-color:$main-color;
 
-.footer__info {
-    @media screen and (min-width: $desktop) {
-        display: flex;
-        justify-content: space-between;
+    &__content {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
-.footer__titles-box {
-    @include font;
+.footer-title {
+    width: 80vw;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    width: 100%;
-}
+    margin-bottom: 40px;
+    color: $light-color;
 
-.footer__pre-title {
-    @media screen and (min-width: $mobile) {
-        display: flex;
-        font-size: 18px;
-        line-height: 22px;
-        margin-bottom: 16px;
-        margin-top: 0px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        display: block;
+    @media screen and (min-width: 768px) {
+        width: 260px;
         font-size: 26px;
-        margin-top: 0px;
-        line-height: 32px;
-        letter-spacing: 0.04em;
-        margin-bottom: 8px;
     }
 
-    @media screen and (min-width: $desktop) {
-        display: inline;
-        font-size: 18px;
+    @media screen and (min-width: 1280px) {
+        width: auto;
         font-weight: 400;
-        letter-spacing: 0.04em;
-        margin-bottom: 14px;
-        margin-top: 0px;
         font-size: 30px;
-        line-height: 37px;
     }
-}
 
-.footer__title {
-    @media screen and (min-width: $mobile) {
+    &__second {
+        padding-top: 20px;
         font-size: 34px;
-        line-height: 41px;
-        letter-spacing: 0.04em;
-        margin-bottom: 60px;
-        margin-top: 0px;
-    }
 
-    @media screen and (min-width: $tablet) {
-        display: block;
-        font-size: 48px;
-        line-height: 59px;
-        letter-spacing: 0.06em;
-        margin-bottom: 82px;
-    }
+        @media screen and (min-width: 768px) {
+            padding-top: 20px;
+            font-size: 48px;
+        }
 
-    @media screen and (min-width: $desktop) {
-        display: inline;
-        letter-spacing: 0.06em;
-        margin-bottom: 0px;
-        font-size: 58px;
-        line-height: 71px;
-    }
-}
-
-.social {
-    display: flex;
-    justify-content: flex-end;
-
-    @media screen and (min-width: $mobile) {
-        margin-bottom: 20px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 46px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 40px;
-    }
-}
-
-.social__item:not(:last-child) {
-    @media screen and (min-width: $mobile) {
-        margin-right: 30px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        margin-right: 28px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-right: 30px;
-    }
-}
-
-.social__icon {
-    width: 100%;
-    height: 100%;
-    fill: $accent-color;
-}
-
-@media screen and (min-width: $desktop) {
-    :hover {
-        fill: $light-color;
-        transition: $timing-function;
-        //cursor: auto;
+        @media screen and (min-width: 1280px) {
+            font-weight: 700;
+            padding-top: 20px;
+            font-size: 58px;
+        }
     }
 }
 
 .contact {
-    display: inline;
-    text-align: right;
+    &__socials {
+        display: flex;
+        justify-content: end;
 
-    @media screen and (min-width: $mobile) {
-        @include font;
+        &__social-item {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+           background-color:$accent-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__icon {
+                fill: $main-color;
+                width: 18px;
+                height: 18px;
+                transition: fill 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            &__icon:hover,
+            &__icon:focus {
+                fill: $light-color;
+                cursor: pointer;
+            }
+        }
+
+        &__social-item:not(:last-child) {
+            margin-right: 30px;
+        }
+    } }
+
+    .contact__number {
+        margin: 40px 0 40px 0;
+        font-weight: 700;
         font-size: 12px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        @include font;
-        font-size: 14px;
-        white-space: nowrap;
-        margin: 0;
-    }
-
-    @media screen and (min-width: $desktop) {
-        @include font;
-        font-size: 16px;
         letter-spacing: 0.02em;
-        white-space: nowrap;
-        margin: 0px auto;
-    }
-}
+        color: #131313;
+        text-align: right;
+    
+        @media screen and (min-width: 768px) {
+          font-size: 14px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+          font-size: 16px;
+        }
 
-.footer__contacts {
-    display: inline-block;
-    text-align: right;
-}
-
-.contact__text {
-    color: $text-color;
-
-    @media screen and (min-width: $mobile) {
-        margin-bottom: 40px;
-        margin-top: 0px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        margin: 0;
-    }
-
-    @media screen and (min-width: $desktop) {}
-}
-
-.contact__tel {
-    text-decoration: none;
-}
-
-.copyright {
-    @include font;
-    font-size: 14px;
-    text-align: center;
-    margin: 0px;
-    color: $copyright;
-    background: $main-color;
-
-    @media screen and (min-width: $mobile) {
-        display: grid;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        padding-top: 29px;
-        padding-bottom: 19px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: 100%;
-        padding-top: 9px;
-        padding-bottom: 10px;
-        letter-spacing: 0.02em;
-    }
-}
-
+        .contact__number__link {
+            text-decoration: none;
+            color: white;
+            transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+      
+          &__link:hover,
+          &__link:focus {
+            color: $accent-color;
+          }
+        }
+      
+      
+      .copyright {
+        width: 165px;
+        margin: 15px auto 0 auto;
+      
+        @media screen and (min-width: 768px) {
+          width: auto;
+        }
+      
+        &__text {
+          text-align: center;
+          font-weight: 700;
+          font-size: 14px;
+          letter-spacing: 0.02em;
+          color: $copyright;
+        }
+      }
