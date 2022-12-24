@@ -1,81 +1,65 @@
-<section class="about">
-    <div class="container container--about">
+<section id="tradition" class="about">
+  <div class="container container--about">
     <p class="about__label">tradition and love</p>
     <h2 class="title about__title">how it’s made?</h2>
     <div class="about__box">
-        <div class="img">
+      <div class="img">
         <div class="img__box front-img">
-            <img
+          <img
             class="image"
             srcset="
-                ./images/about/img-2_m@1x.jpg 279w,
-                ./images/about/img-2_t@1x.jpg 330w,
-                ./images/about/img-2_d@1x.jpg 490w,
-                ./images/about/img-2_m@2x.jpg 558w,
-                ./images/about/img-2_t@2x.jpg 660w,
-                ./images/about/img-2_d@2x.jpg 980w
+              ./images/about/img-2_m@1x.jpg 279w,
+              ./images/about/img-2_t@1x.jpg 330w,
+              ./images/about/img-2_d@1x.jpg 490w,
+              ./images/about/img-2_m@2x.jpg 558w,
+              ./images/about/img-2_t@2x.jpg 660w,
+              ./images/about/img-2_d@2x.jpg 980w
             "
             sizes="
                 (min-width: 1200px) 490px, 
                 (min-width: 768px) 330px, 
-                (min-width: 480px) 279px, 
+                (max-width: 480px) 279px, 
                 100vw"
             src="./images/about/img-2_m@1x.jpg"
             alt="корова на пасовищі"
             loading="lazy"
-            />
+          />
         </div>
         <div class="img__box back-img"></div>
-        </div>
-        <div class="tablet">
+      </div>
+      <div class="tablet">
         <div class="about__text">
-            <p class="about__text-1">
+          <p class="about__text-1">
             Ice is a place where you will become not only a little happier, but
             also healthier. Health is the main value for us, and we follow it
             when creating our handmade desserts.
-            </p>
-            <p class="about__text-2">
+          </p>
+          <p class="about__text-2">
             We use traditional recipes and 100% natural ingredients. Our
             products are so natural that they can be given to children from the
             age of three years. Sweets lovers can expect 55 types of ice cream,
             15 types of coffee and 23 milkshakes.
-            </p>
-            <p class="about__text-3">
+          </p>
+          <p class="about__text-3">
             This is enough to choose ice cream and coffee for any mood!
-            </p>
+          </p>
         </div>
         <button type="button" class="btn btn--about" data-modal-open>
-            Read more
-            <svg class="contacts__vector" width="5px" height="10px">
+          Read more
+          <svg class="contacts__vector" width="5px" height="10px">
             <use href="./images/icons.svg#icon-button-vector"></use>
           </svg>
         </button>
-        </div>
-    </div>
-</div>
-</section>
-<!-- MODAL -->
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="modal__btn-close" data-modal-close>
-        <svg class="modal__icon" width="100%" height="100%">,
-                <use href="./images/icons.svg#close-line"></use>,
-              </svg>
-      </button>
-      <p class="modal__title"><b>How it’s made?</b></p>
-      
+      </div>
     </div>
   </div>
+</section>
 
 <!-- Scripts -->
 
-    
-    <script src="./js/scroll.js"></script>
-    <script src="./js/modal.js"></script>
-  <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
