@@ -1,49 +1,29 @@
-// .section {
-//   padding-top: 80px;
-//   padding-bottom: 40px;
-//   @media screen and(min-width:768px) {
-//     padding-top: 100px;
-//     padding-bottom: 80px;
-//   }
-//   @media screen and(min-width:1200px) {
-//     padding-top: 140px;
-//     padding-bottom: 100px;
-//   }
-// }
-// .container {
-//   width: 100%;
+.reviews__container {
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
 
-//   @media screen and (min-width: 320px) {
-//     width: 280px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 705px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     width: 968px;
-//   }
-// }
-.swiper-slide {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 100px;
+  }
+}
+.reviews__slide {
   @include alignment(center, center);
   flex-direction: column;
   gap: 32px;
 }
 
-.img-wrapper {
+.reviews__wrapper {
   @include alignment(center, center);
   width: 85px;
   height: 85px;
   border-radius: 50%;
   overflow: hidden;
-
-  &__image {
-    max-width: 100%;
-  }
 }
-.p-wrapper {
+.reviews__cover {
   padding: 35px 39px;
+  max-width: 968px;
   background-color: $main-color;
   border-radius: 10px;
 
@@ -54,26 +34,25 @@
   @media screen and (min-width: 1200px) {
     padding: 43px 109px;
   }
+}
+.reviews__text {
+  font-size: 12px;
+  line-height: calc(31 / 12);
+  text-align: center;
+  color: $light-color;
 
-  &__text {
-    font-size: 12px;
-    line-height: calc(31 / 12);
-    text-align: center;
-    color: $light-color;
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
 
-    @media screen and (min-width: 768px) {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: calc(26 / 14);
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 16px;
-      line-height: calc(30 / 16);
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
   }
 }
-.name-text {
+.reviews__name {
   margin-bottom: 24px;
   font-weight: 500;
   font-size: 20px;
@@ -87,10 +66,11 @@
     line-height: calc(30 / 16);
   }
 }
-.swiper-container .swiper-pagination {
+
+.reviews .swiper .swiper-pagination {
   bottom: 0px;
 }
-.swiper-pagination-bullet {
+.swiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background: $main-color;

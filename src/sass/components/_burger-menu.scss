@@ -1,0 +1,45 @@
+.menu-toggle {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+}
+
+.menu-button-open {
+    margin-left: auto;
+    padding-top: 9px;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.menu-button-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+    overflow: scroll;
+}
+
+.menu-container .icon-close {
+    display: none;
+}
+
+.menu-container.is-open .icon-close {
+    display: block;
+}
+
+.menu-container.is-open .icon-menu {
+    display: none;
+}
