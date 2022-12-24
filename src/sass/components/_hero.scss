@@ -22,6 +22,10 @@
 
 		height: 349px;
 	}
+
+	@media screen and (min-width:$desktop) {
+		height: 591px;
+	}
 }
 
 .hero__data{
@@ -65,9 +69,6 @@
 	color: $light-color;
 }
 
-
-
-
 .hero__title {
 	margin-bottom: 32px;
 
@@ -80,6 +81,12 @@
 
 	@media screen and (min-width:$tablet) {
 		margin-bottom: 24px;
+	}
+
+	@media screen and (min-width:$desktop) {	
+		font-size: 38px;
+		line-height: calc(48 / 37);
+		margin-bottom: 28px;
 	}
 	
 
@@ -105,6 +112,18 @@
 	&:hover{
 		border-color: $button-hover-color;
 	}
+	
+	@media screen and (min-width: $desktop){
+		padding: 12px 37px;
+		font-size: 14px;
+		line-height: calc(18 / 14)
+	}
+
+	&:focus{
+		@media screen and (min-width: $desktop){
+		color: $light-color;
+	}
+}
 }
 
 .hero__how-its-made {
@@ -167,13 +186,19 @@
 
 	margin-top: 39px;
 	margin-left: 184px; 
+	margin-bottom: 12px;
 	width: 139px;
-// 	font-family: 'Montserrat';
-// font-style: normal;
-// font-weight: 400;
 	font-size: 12px;
 	line-height: 140%;
 
-	color: #FCFCFC;
+	color: $light-color;
+}
 
+.hero__arrow{
+	@media screen and (max-width:767px){
+		display: none;
+	}
+
+	margin-left: 184px;
+	fill: $light-color;
 }
