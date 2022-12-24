@@ -1,0 +1,112 @@
+.advantages {
+  background-color: $main-color;
+  }
+  .advantages__list {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -32px;
+    }
+  }
+  .advantages__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 28px;
+      }
+  }
+  .advantages__item {
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 6 * 32px) / 3);
+      margin: 32px;
+    }
+  }
+  .advantages__item::before {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
+    }
+    align-content: center;
+    content: " ";
+    width: 50px;
+    height: 50px;
+    background-color:$accent-color;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .advantages__item:nth-child(1)::before {
+    background-image: url("../images/advantages/cow_1х.png");
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url("../images/advantages/cow_2x.png");
+  // }
+  }
+  .advantages__item:nth-child(2)::before {
+    // background-image: url("./images/advantages/weight_1x.png");
+    // background-image: url('../images/advantages/weight_1х.png');
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    // background-image: url("../images/advantages/weight_2x.png");
+  }
+  }
+  .advantages__item:nth-child(3)::before {
+    // background-image: url("../images/advantages/ice_1x.png");
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    // background-image: url("../images/advantages/ice_2x.png");
+  }
+  }
+  .advantages__title {
+  // font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1,22;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $light-color;
+  margin-bottom: 16px;
+    @media screen and (min-width: $tablet)  {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px; 
+    }
+  }
+  .advantages__text {
+    // font-family: 'Montserrat';
+    margin-left: auto;
+    margin-right: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1,6;
+  text-align: center;
+  color: $light-color;
+  width: 230px;
+  
+  @media screen and (min-width: $tablet) {
+    font-weight: 400;
+  font-size: 14px;
+  line-height: 1,74;
+    width: 145px;  
+  }
+  @media screen and (min-width: $desktop)  {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1,76;
+  letter-spacing: 0.02em;
+  width: 250px;
+  }
+    }
+  
+  
