@@ -2,7 +2,7 @@
   &__section {
     padding-top: 60px;
     padding-bottom: 60px;
-    // outline: 1px solid red;
+    outline: 1px solid red;
   }
   // .products__label
   &__label {
@@ -47,13 +47,14 @@
     }
   }
 }
-.products-card {
-  // .products-card__wrapper
-  &__wrapper {
-  }
-}
+// .products-card {
+//   // .products-card__wrapper
+//   &__wrapper {
+//   }
+// }
 .product {
   &__set {
+    // margin: 0 auto;
     @extend .list;
     display: flex;
     flex-direction: column;
@@ -89,7 +90,6 @@
   }
   // .product__text
   &__text {
-    // margin-bottom: 101px;
     padding: 0 40;
     font-weight: 400;
     font-size: 14px;
@@ -112,6 +112,9 @@
     bottom: 16px;
 
     display: block;
+    width: 40px;
+    height: 16px;
+    padding: 0;
     background-color: transparent;
     border-style: none;
     cursor: pointer;
@@ -133,6 +136,7 @@
   align-items: center;
   max-width: $mobile;
   min-height: 420px;
+  min-width: 280px;
   padding-top: 123px;
   padding-bottom: 56px;
   border-radius: 24px;
@@ -360,12 +364,12 @@
     }
   }
   @media screen and (min-width=$tablet) {
-    margin: 0;
     padding-top: 108px;
     padding-bottom: 52px;
+    min-width: 224px;
     min-height: 428px;
     border-radius: 15.7808px;
-    @include card-set-item(3, 16px);
+    // @include card-set-item(3, 16px);
   }
   @media screen and (min-width=$desktop) {
     padding-top: 165px;
