@@ -1,0 +1,224 @@
+.contacts {
+  position: relative;
+  padding-bottom: 60px;
+  z-index: 0;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 52px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 120px;
+  }
+}
+.background {
+  position: absolute;
+  top: 353px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $main-color;
+  z-index: -10;
+  @media screen and (min-width: 768px) {
+    top: 299px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 128px;
+  }
+}
+.contacts__list {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
+}
+.contacts__item {
+  @include alignment();
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 32px 24px 32px;
+  background-color: $light-color;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+.contacts__item.card-set__item {
+  @media screen and (min-width: 768px) {
+    @include card-set-item(3);
+    gap: 32px;
+    padding: 40px 24px;
+  }
+}
+.contacts__list.card-set {
+  @media screen and (min-width: 1200px) {
+    $card-gap: 32px;
+    gap: $card-gap;
+  }
+}
+.contacts__item.card-set__item {
+  @media screen and (min-width: 1200px) {
+    $card-gap: 32px;
+    @include card-set-item(3, $card-gap);
+    gap: 32px;
+    padding: 40px;
+  }
+}
+.contacts_wrapper {
+  padding: 4px 22px;
+  width: min-content;
+  background-color: $accent-color;
+  border-radius: 4px;
+}
+.contacts__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+  }
+}
+.contacts__data {
+  @include alignment();
+  flex-direction: column;
+  gap: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+.contacts__town {
+  color: $text-color;
+}
+.contacts__address {
+  color: $tomato-color;
+}
+.contacts__schedule {
+  @include alignment();
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+   gap: 12px;
+  }
+}
+.contacts__worktime {
+  @include alignment();
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+.contacts__day {
+  color: $text-color;
+}
+.contacts__time {
+  color: $disabled-color;
+}
+.contacts__links {
+  @include alignment();
+  flex-direction: column;
+  gap: 6px;
+}
+.contacts__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  color: $text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+.contacts__buttons {
+  @include alignment(center);
+  flex-direction: column;
+  gap: 18px;
+
+  @media screen and (min-width: 768px) {
+    @include alignment(center, center);
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+.contacts__button {
+  width: 196px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 10px;
+  background-color: transparent;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  
+}
+.contacts__vector {
+  margin-left: 7px;
+  fill: currentColor;
+}
+.contacts__button-yellow {
+  background-color: $accent-color;
+  color: $text-color;
+  border-color: $accent-color;
+  @include transition(border-color,background-color,color);
+
+  &:hover {
+    border-color: $button-hover-color;
+    background-color: $button-hover-color;
+  }
+  &:focus {
+    border-color: $button-hover-color;
+    background-color: $button-hover-color;
+    color: $white-color;
+  }
+  &:disabled {
+    border-color: $disabled-color;
+    background-color: $disabled-color;
+  }
+}
+.contacts__button-border {
+  border: 2px solid $accent-color;
+  color: $text-color;
+  @include transition(border-color,color);
+
+  &:hover {
+    border-color: $button-hover-color;
+  }
+  &:focus {
+    border-color: $button-hover-color;
+    color: $white-color;
+  }
+  &:disabled {
+    border-color: $disabled-color;
+  }
+}

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>IceCream</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
     <!--NORMALIZE-->
     <link
       rel="stylesheet"
@@ -28,9 +29,84 @@
     />
     <script type="module" src="./index.js"></script>
   </head>
+
   <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-nav">
+          <a class="logo" href="./index.html">
+            <picture>
+              <!-- Desktop screen -->
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/Logo/d@1x.png 1x, ./images/Logo/d@2x.png 2x"
+                type="image/png"
+              />
+              <!-- Tablet screen -->
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/Logo/t@1x.png 1x, ./images/Logo/t@2x.png 2x"
+                type="image/png"
+              />
+              <!-- Mobile screen -->
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/Logo/m@1x.png 1x, ./images/Logo/m@2x.png 2x"
+                type="image/png"
+              />
+              <img
+                class="logo"
+                src="./images/Logo/m@1x.png"
+                alt="Логотип"
+                width="40"
+                height="37"
+                loading="lazy"
+              />
+            </picture>
+          </a>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="#home" class="site-nav__link link">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#tradition" class="site-nav__link link"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="#products" class="site-nav__link link">Our products</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#contact" class="site-nav__link link">Contact</a>
+            </li>
+          </ul>
+          <div class="header-button">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="icon-menu" width="32" height="32">
+                <use href="./images/sprite.svg#menu"></use>
+              </svg>
+            </button>
+            <button class="btn header-btn">
+              Buy now
+              <svg class="icon-btn" width="12" height="12">
+                <use href="./images/sprite.svg#right-bold"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <!-- <include src="./partials/example.html"></include> -->
+    <!-- Sergii -->
+    <include src=".//partials/about.html"></include>
+
+    <!-- ALYONA -->
+    <include src="./partials/gallery.html"></include>
 
     <main>
       <!-- Oleksandr -->
@@ -38,6 +114,12 @@
       <!-- ULIANA -->
       <include src="./partials/reviews.html"></include>
     </main>
+
+    <!-- ULIANA -->
+    <include src="./partials/contacts.html"></include>
+
+    <!-- TANYA -->
+    <include src="./partials/footer.html"></include>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./slider.js"></script>
