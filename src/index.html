@@ -56,7 +56,7 @@
           </li>
         </ul>
         <div class="header-button">
-          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <button class="menu-toggle menu-button-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="icon-menu" width="32" height="32">
               <use href="./images/sprite.svg#menu"></use>
             </svg>
@@ -90,9 +90,8 @@
     <include src="./partials/contacts.html"></include>
   </main>
   <!--Menu-->
-
   <div class="menu-container js-menu-container" id="mobile-menu">
-    <a class="logo" href="./index.html">
+    <a class="logo-menu" href="./index.html">
       <picture>
         <!-- Tablet screen -->
         <source media="(min-width: 768px)" srcset="./images/Logo/t@1x.png 1x, ./images/Logo/t@2x.png 2x"
@@ -134,7 +133,7 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
-  <script defer src="./js/mobile-menu.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 
   <!-- TANYA -->
   <include src="./partials/footer.html"></include>
