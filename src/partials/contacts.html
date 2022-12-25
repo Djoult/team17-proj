@@ -1,10 +1,10 @@
 <section id="contact" class="contacts">
   <div class="background"></div>
   <div class="container contacts__container">
-    <h2 class="contacts__header title hidden">Our contacts</h2>
+    <h2 class="contacts__header title visually-hidden">Our contacts</h2>
     <ul class="contacts__list list card-set">
       <li class="contacts__item card-set__item">
-        <div class="contacts_wrapper">
+        <div class="contacts__wrapper">
           <span class="contacts__text">Cafe</span>
         </div>
         <address class="contacts__data">
@@ -37,7 +37,7 @@
         </div>
       </li>
       <li class="contacts__item card-set__item">
-        <div class="contacts_wrapper">
+        <div class="contacts__wrapper">
           <span class="contacts__text">Foodtruck</span>
         </div>
         <address class="contacts__data">
@@ -70,7 +70,7 @@
         </div>
       </li>
       <li class="contacts__item card-set__item">
-        <div class="contacts_wrapper">
+        <div class="contacts__wrapper">
           <span class="contacts__text">Cafe</span>
         </div>
         <address class="contacts__data">
@@ -104,7 +104,8 @@
       </li>
     </ul>
     <div class="contacts__buttons">
-      <buttons
+      <button
+        data-contacts-modal-open
         class="btn contacts__button contacts__button-yellow"
         type="button"
       >
@@ -112,8 +113,8 @@
         <svg class="contacts__vector" width="5px" height="10px">
           <use href="./images/icons.svg#icon-button-vector"></use>
         </svg>
-      </buttons>
-      <button
+      </button>
+      <button data-franchise-modal-open
         class="btn contacts__button contacts__button-border"
         type="button"
       >

@@ -1,0 +1,53 @@
+.modal.contacts-modal {
+  padding: 28px;
+  @media screen and (min-width: $tablet) {
+    padding: 32px 60px;
+  }
+}
+.contacts-modal__title,
+.contacts-modal__wrapper {
+  margin-bottom: 22px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+}
+.contacts-modal__wrapper {
+  width: 224px;
+  height: 200px;
+  @media screen and (min-width: $tablet) {
+    width: 448px;
+    height: 260px;
+  }
+}
+.modal .modal__btn-close{
+    margin: 0;
+}
+.contacts-modal__button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 34px;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: $text-color;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+
+  @include transition(background-color, color);
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+  &:focus {
+    background-color: $button-hover-color;
+    color: $white-color;
+  }
+  &:disabled {
+    background-color: $disabled-color;
+  }
+}
