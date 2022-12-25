@@ -1,6 +1,6 @@
-<div class="data-modal is-hidden" data-modal>
-    <div class="modal modal-product">
-        <button data-modal-close type="button" class="button modal__close-button">
+<div class="backdrop is-hidden" data-product-modal>
+    <div class="modal product-modal">
+        <button data-product-modal-close type="button" class="button modal__close-button">
             <svg class="modal__close-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -9,7 +9,15 @@
         <p class="modal-product__subtitle">Chololate icecream</p>
 
         <div class="modal-product__item">
-            <picture></picture>
+            <picture>
+                <source srcset="
+                ./images/product-section-modal/img-2@1x.png 1x,
+                ./images/product-section-modal/img-2@2x.png 2x" />
+
+                <img class="modal-product__img" src="./images/product-section-modal/img-2@1x.png" alt="icecream"
+                    width="132" height="139" loading="lazy" />
+
+            </picture>
         </div>
 
         <ul class="macronutrients__list list">
@@ -47,33 +55,41 @@
             </li>
         </ul>
 
-        <p class="modal-product__name ingredients">Ingredients</p>
+        <p class="modal-product__name">Ingredients</p>
 
+    <div class="ingredients">
         <ul class="ingredients__list list">
-            <li class="ingredients__item">
-                <span class="ingredients__name">Milk</span> 100ml
-            </li>
-            <li class="ingredients__item">
-                <span class="ingredients__name">Belgian chocolate</span> 20g
-            </li>
-            <li class="ingredients__item">
-                <span class="ingredients__name">Cream</span> 150 ml
-            </li>
-            <li class="ingredients__item">
-                <span class="ingredients__name">Cocoa powder</span> 30g
-            </li>
-            <li class="ingredients__item">
-                <span class="ingredients__name">Sugar</span> 40g
-            </li>
-            <li class="ingredients__item">
-                <span class="ingredients__name">Vanilla sugar</span> 10g
-            </li>
-        </ul>
-        </ul>
+        <li class="ingredients__item">Milk
+            <span class="ingredients__name"></span> 100ml
+        </li>
+        <li class="ingredients__item">Belgian chocolate
+            <span class="ingredients__name"></span> 20g
+        </li>
+        <li class="ingredients__item">Cream
+            <span class="ingredients__name"></span> 150 ml
+        </li>
+        <li class="ingredients__item">Cocoa powder
+            <span class="ingredients__name"></span> 30g
+        </li>
+        <li class="ingredients__item">Sugar
+            <span class="ingredients__name"></span> 40g
+        </li>
+        <li class="ingredients__item">Vanilla sugar
+            <span class="ingredients__name"></span> 10g
+        </li>
+    </ul></div>
+        
+        
 
-
-
-        <button class="modal__btn btn" type="submit">Submit</button>
+        <form class="modal__form" name="modal_form">
+            <div class="modal__group">
+                <input class="modal__field" type="text" name="user_name" id="user_name" placeholder="Name" required>
+                <input class="modal__field" type="tel" name="user_phone" id="user_phone" placeholder="Phone" required>
+                <textarea class="modal__message" name="user_message" id="user_message" rows="6"
+                    placeholder="Comment"></textarea>
+            </div>
+            <button class="btn modal__btn" type="submit">Submit</button>
+        </form>
 
     </div>
 </div>
