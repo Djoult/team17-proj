@@ -1,7 +1,7 @@
 .footer {
     outline: 1px solid #E1E1E1;
     padding-bottom: 12px;
-    background-color:$main-color;
+    background-color: $main-color;
 
     &__content {
         @media screen and (min-width: 768px) {
@@ -48,82 +48,82 @@
     }
 }
 
-.contact {
-    &__socials {
-        display: flex;
-        justify-content: end;
+.contact__list {
+    display: flex;
+    justify-content: end;
+}
 
-        &__social-item {
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-           background-color:$accent-color;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            
-            
+.contact__item {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            .social__icon {
-                fill: $main-color;
-                transition: fill $timing-function;
-            }
 
-            .social__icon:hover,
-            .social__icon:focus {
-                fill: $light-color;
-                cursor: pointer;
-            }
-        }
+.contact__icon {
+    fill: $main-color;
+    transition: fill $timing-function;
 
-        &__social-item:not(:last-child) {
-            margin-right: 30px;
-        }
-    } }
+    &:hover,
+    &:focus {
+        fill: $light-color;
+        cursor: pointer;
+    }
+}
 
-    .contact__number {
-        margin: 40px 0 40px 0;
+
+.contact__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+.contact__number {
+    margin: 40px 0 40px 0;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #131313;
+    text-align: right;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
+
+    .contact__number-link {
+        text-decoration: none;
+        color: white;
+        transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-link:hover,
+    &-link:focus {
+        color: $accent-color;
+    }
+}
+
+
+.copyright {
+    width: 165px;
+    margin: 15px auto 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: auto;
+    }
+
+    &__text {
+        text-align: center;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 0.02em;
-        color: #131313;
-        text-align: right;
-    
-        @media screen and (min-width: 768px) {
-          font-size: 14px;
-        }
-    
-        @media screen and (min-width: 1280px) {
-          font-size: 16px;
-        }
-
-        .contact__number-link {
-            text-decoration: none;
-            color: white;
-            transition: color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-          }
-      
-          &-link:hover,
-          &-link:focus {
-            color: $accent-color;
-          }
-        }
-      
-      
-      .copyright {
-        width: 165px;
-        margin: 15px auto 0 auto;
-      
-        @media screen and (min-width: 768px) {
-          width: auto;
-        }
-      
-        &__text {
-          text-align: center;
-          font-weight: 700;
-          font-size: 14px;
-          letter-spacing: 0.02em;
-          color: $copyright;
-        }
-      }
+        color: $copyright;
+    }
+}
