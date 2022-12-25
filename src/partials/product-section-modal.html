@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-product-modal>
+<div class="backdrop" data-product-modal>
     <div class="modal product-modal">
         <button data-product-modal-close type="button" class="button modal__close-button">
             <svg class="modal__close-icon" width="18" height="18">
@@ -9,45 +9,47 @@
         <p class="modal-product__subtitle">Chololate icecream</p>
 
         <div class="modal-product__item">
+            <div class="modal-product--front">
             <picture>
                 <source srcset="
-                ./images/product-section-modal/img-2@1x.png 1x,
-                ./images/product-section-modal/img-2@2x.png 2x" />
+                ./images/product-section-modal/img-3@1x.png 1x,
+                ./images/product-section-modal/img-3@2x.png 2x" />
 
-                <img class="modal-product__img" src="./images/product-section-modal/img-2@1x.png" alt="icecream"
+                <img class="modal-product__img" src="./images/product-section-modal/img-3@1x.png" alt="icecream"
                     width="132" height="139" loading="lazy" />
-
             </picture>
+            </div>
+            <div class="modal-product--back"></div>
         </div>
 
         <ul class="macronutrients__list list">
             <li class="macronutrients__item">
-                <div class="macronutrients__wrapper">
-                    <div class="macronutrients__ellipse">
+                <div class="macronutrients__ellipse">
+                    <div class="macronutrients__wrapper">
                         <span class="macronutrients__value">320</span>
                     </div>
                     <span class="macronutrients__type">kcal</span>
                 </div>
             </li>
             <li class="macronutrients__item">
-                <div class="macronutrients__wrapper">
-                    <div class="macronutrients__ellipse">
+                <div class="macronutrients__ellipse">
+                    <div class="macronutrients__wrapper">
                         <span class="macronutrients__value">4g</span>
                     </div>
                     <span class="macronutrients__type">Protein</span>
                 </div>
             </li>
             <li class="macronutrients__item">
-                <div class="macronutrients__wrapper">
-                    <div class="macronutrients__ellipse">
+                <div class="macronutrients__ellipse">
+                    <div class="macronutrients__wrapper">
                         <span class="macronutrients__value">8,2g</span>
                     </div>
                     <span class="macronutrients__type">Fats</span>
                 </div>
             </li>
             <li class="macronutrients__item">
-                <div class="macronutrients__wrapper">
-                    <div class="macronutrients__ellipse">
+                <div class="macronutrients__ellipse">
+                    <div class="macronutrients__wrapper">
                         <span class="macronutrients__value">40,4g</span>
                     </div>
                     <span class="macronutrients__type">Carbs</span>
