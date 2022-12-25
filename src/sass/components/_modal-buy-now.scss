@@ -1,110 +1,217 @@
-.product-modal__wraper {
-  margin-top: 20px;
-  margin-bottom: 32px;
+.modal-buy-now {
+}
+.product-modal {
+  // .product-modal__wraper
+  &__wraper {
+    margin-top: 83px;
+    margin-bottom: 32px;
+
     @media screen and (min-width=$tablet) {
       margin-bottom: 40px;
-      margin-top: 40px;
+      margin-top: 103px;
     }
-    @media screen and (min-width=$desktop) {
-      margin-bottom: 40px;
-      margin-top: 40px;
+  }
+
+  // .product-modal__set
+
+  &__set {
+    @extend .list;
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+    @media screen and (min-width=$tablet) {
+      flex-direction: row;
+      gap: 32px;
+      justify-content: center;
     }
-}
-.product-modal__set {
-  @extend .list;
-  display: flex;
-  flex-direction: column;
-  margin: -32px;
-  @media screen and (min-width=$tablet) {
-    flex-direction: row;
+  }
+
+  // .product-modal__item
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 132px;
+    max-width: 136px;
+    min-width: 132px;
+    min-height: 135px;
+
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15px;
+    @media screen and (min-width=$tablet) {
+      margin: 0;
+    }
+  }
+
+  // .product-modal__title
+
+  &__title {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-color;
   }
 }
 .product-modal__item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-
-  max-width: $mobile;
-  max-width: $mobile;
-  min-height: 135px;
-  min-width: 132px;
-  border-radius: 15px;
-
-  padding-bottom: 20px;
-  margin: 32px;
-}
-
-.product-modal__item:nth-child(1) {
-  border: 2px solid #96AF8C;
-filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-
-&::before {
-  content: '';
-  position: absolute;
-  top: -65px;
-  width: 132px;
-  height: 132px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  border-radius: 100px;
-  background-image: url(../images/products/Img1_m@1x.jpg);
-  background-size: contain;
-  z-index: 2;
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/products/Img1_m@2x.jpg);
-  }
-  @media screen and (min-width=$tablet) {
-    background-image: url(../images/products/Img1_t@1x.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/products/Img1_t@2x.jpg);
+  &:nth-child(1) {
+    border: 2px solid #96af8c;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 132px;
+      height: 132px;
+      top: -63px;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      border-radius: 100px;
+      background-image: url(../images/products/Img1_m@1x.jpg);
+      background-size: contain;
+      z-index: 2;
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/Img1_m@2x.jpg);
+      }
+      @media screen and (min-width=$tablet) {
+        // top: -63px;
+        background-image: url(../images/products/Img1_t@1x.jpg);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/products/Img1_t@2x.jpg);
+        }
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: -56px;
+      width: 132px;
+      height: 132px;
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+      border-radius: 100px;
+      @media screen and (min-width=$tablet) {
+        // top: -56px;
+      }
     }
   }
-  @media screen and (min-width=$desktop) {
-    background-image: url(../images/products/Img1_d@1x.jpg);
-    border-radius: 150px;
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/products/Img1_d@2x.jpg);
+  &:nth-child(2) {
+    border: 2px solid #efd478;
+    background-color: #efd478;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 132px;
+      height: 132px;
+      top: -63px;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      border-radius: 100px;
+      background-image: url(../images/products/Img2_m@1x.jpg);
+      background-size: contain;
+      z-index: 2;
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/Img2_m@2x.jpg);
+      }
+      @media screen and (min-width=$tablet) {
+        top: -63px;
+        background-image: url(../images/products/Img2_t@1x.jpg);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/products/Img2_t@2x.jpg);
+        }
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: -56px;
+      width: 132px;
+      height: 132px;
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+      border-radius: 100px;
+      @media screen and (min-width=$tablet) {
+      }
     }
   }
-}
-&::after {
-  content: '';
-  position: absolute;
-  background: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
-    #d9d9d9;
-  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-  border-radius: 100px;
-    top: -60px;
-    width: 132px;
-    height: 132px;
-    border-radius: 150px;
-
-}
-}
-.product-modal__item:nth-child(2) {
-  background: #EFD478;
-border: 2px solid #EFD478;
-box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-}
-.product-modal__item:nth-child(3) {
-  border: 2px solid #D6936D;
-filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  &:nth-child(3) {
+    border: 2px solid #d6936d;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 132px;
+      height: 132px;
+      top: -63px;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      border-radius: 100px;
+      background-image: url(../images/products/Img3_m@1x.jpg);
+      background-size: contain;
+      z-index: 2;
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/products/Img3_m@2x.jpg);
+      }
+      @media screen and (min-width=$tablet) {
+        // top: -63px;
+        background-image: url(../images/products/Img3_t@1x.jpg);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/products/Img3_t@2x.jpg);
+        }
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: -56px;
+      width: 132px;
+      height: 132px;
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+      border-radius: 100px;
+      @media screen and (min-width=$tablet) {
+        // top: -108px;
+      }
+    }
+  }
 }
