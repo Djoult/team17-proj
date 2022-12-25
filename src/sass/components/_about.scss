@@ -146,12 +146,17 @@
 .front-img {
     position: relative;
     z-index: 2;
+
+	 transition: transform $timing-function;
+
+	 &:hover{
+		transform: translateY(-12%);
+	 }
 }
 
 .image{
     width: 100%;
 }
-
 
 .about__text {
     max-width: 220px;
@@ -256,6 +261,8 @@ color: $light-color;
     line-height: calc(18/14);
 
     color: #000000;
+
+	 transition: border-color $timing-function, color $timing-function, background-color $timing-function;
 
     &:hover {
     border-color: $button-hover-color;
