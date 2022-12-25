@@ -86,7 +86,7 @@
 
 .img {
     position: relative;
-    max-width: 280px;
+    width: 280px;
     margin-left: auto;
     margin-right: auto;
 
@@ -107,8 +107,8 @@
 .img__box {
     display: flex;
     justify-content: center;
-    max-width: 280px;
-    max-height: 280px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     overflow: hidden;
 
@@ -118,13 +118,13 @@
     
     background: $accent-color;
 
-    @media screen and (min-width:$tablet) {
+    @media screen and (min-width:768px) {
         width: 330px;
         height: 330px;
         margin-bottom: 0;
     }
 
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width:1200px) {
         width: 491px;
         height: 491px;
 }
@@ -278,4 +278,54 @@ color: $light-color;
 
 .btn__icon {
     fill: #000000;
+}
+
+.modal-about {
+    @media screen and (min-width:768px) {
+        padding-left: 60px;
+    padding-right: 60px;
+    }
+    
+}
+
+.modal__title-about {
+    margin-bottom: 20px;
+
+    
+
+    @media screen and (min-width:$tablet) {
+        margin-bottom: 32px;
+    }
+}
+
+.about-iframe {
+    width: 224px;
+    height: 199px;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 10px;
+
+    @media screen and (min-width:$tablet) {
+        margin-bottom: 32px;
+        width: 448px;
+        height: 205px;
+        align: center;
+    }
+}
+
+.modal__text-about {
+
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: calc(20/14);
+
+@media screen and (min-width: 768px) {
+    font-size: 16px;
+line-height: calc(22/16)
+}
 }
