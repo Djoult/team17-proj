@@ -1,54 +1,52 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
-      <a class="logo-menu" href="./index.html">
-        <picture>
-          <!-- Tablet screen -->
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/Logo/t@1x.png 1x, ./images/Logo/t@2x.png 2x"
-            type="image/png"
-          />
-          <!-- Mobile screen -->
-          <source
-            media="(max-width: 767px)"
-            srcset="./images/Logo/m@1x.png 1x, ./images/Logo/m@2x.png 2x"
-            type="image/png"
-          />
-          <img
-            class="logo"
-            src="./images/Logo/t@1x.png"
-            alt="Логотип"
-            width="48"
-            height="44"
-            loading="lazy"
-          />
-        </picture>
-      </a>
-      <button class="menu-toggle menu-button-close js-close-menu">
-        <svg class="icon-close" width="32" height="32">
-          <use href="./images/sprite.svg#close"></use>
-        </svg>
-      </button>
+  <a class="logo-menu" href="./index.html">
+    <picture>
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/Logo/t@1x.png 1x, ./images/Logo/t@2x.png 2x"
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="./images/Logo/m@1x.png 1x, ./images/Logo/m@2x.png 2x"
+        type="image/png"
+      />
+      <img
+        class="logo"
+        src="./images/Logo/t@1x.png"
+        alt="Логотип"
+        width="48"
+        height="44"
+        loading="lazy"
+      />
+    </picture>
+  </a>
+  <button class="menu-toggle menu-button-close js-close-menu">
+    <svg class="icon-close" width="32" height="32">
+      <use href="./images/sprite.svg#close"></use>
+    </svg>
+  </button>
 
-      <ul class="menu-nav list">
-        <li class="menu-nav__item-menu">
-          <a href="#home" class="menu-nav__link-menu link">Home</a>
-        </li>
-        <li class="menu-nav__item-menu">
-          <a href="#tradition" class="menu-nav__link-menu link"
-            >How it’s made?</a
-          >
-        </li>
-        <li class="menu-nav__item-menu">
-          <a href="#products" class="menu-nav__link-menu link">Our products</a>
-        </li>
-        <li class="menu-nav__item-menu">
-          <a href="#contact" class="menu-nav__link-menu link">Contact</a>
-        </li>
-      </ul>
-      <button class="btn menu-btn header-btn">
-        Buy now
-        <svg class="icon-btn" width="12" height="12">
-          <use href="./images/sprite.svg#right-bold"></use>
-        </svg>
-      </button>
-    </div>
+  <ul class="menu-nav list">
+    <li class="menu-nav__item-menu">
+      <a href="#home" class="menu-nav__link-menu link">Home</a>
+    </li>
+    <li class="menu-nav__item-menu">
+      <a href="#tradition" class="menu-nav__link-menu link">How it’s made?</a>
+    </li>
+    <li class="menu-nav__item-menu">
+      <a href="#products" class="menu-nav__link-menu link">Our products</a>
+    </li>
+    <li class="menu-nav__item-menu">
+      <a href="#contact" class="menu-nav__link-menu link">Contact</a>
+    </li>
+  </ul>
+  <button class="btn menu-btn header-btn" data-buy-now-mobile-modal-open>
+    Buy now
+    <svg class="icon-btn" width="12" height="12">
+      <use href="./images/sprite.svg#right-bold"></use>
+    </svg>
+  </button>
+</div>
