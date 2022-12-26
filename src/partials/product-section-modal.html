@@ -1,97 +1,127 @@
 <div class="backdrop is-hidden" data-products-modal>
-    <div class="modal product-modal">
-        <button data-products-modal-close type="button" class="button modal__close-button">
-            <svg class="modal__close-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-        </button>
+  <div class="modal product-modal">
+    <button
+      data-products-modal-close
+      type="button"
+      class="button modal__close-button"
+    >
+      <svg class="modal__close-icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
 
-        <p class="modal-product__subtitle">Chololate icecream</p>
+    <p class="modal-product__subtitle">Chololate icecream</p>
 
-        <div class="modal-product__item">
-            <div class="modal-product--front">
-            <picture>
-                <source srcset="
-                ./images/product-section-modal/img-3@1x.png 1x,
-                ./images/product-section-modal/img-3@2x.png 2x" />
+    <div class="modal-product__item">
+      <div class="modal-product--front">
+        <picture>
+          <source
+            srcset="
+              ./images/product-section-modal/img-3@1x.png 1x,
+              ./images/product-section-modal/img-3@2x.png 2x
+            "
+          />
 
-                <img class="modal-product__img" src="./images/product-section-modal/img-3@1x.png" alt="icecream"
-                    width="132" height="139" loading="lazy" />
-            </picture>
-            </div>
-            <div class="modal-product--back"></div>
+          <img
+            class="modal-product__img"
+            src="./images/product-section-modal/img-3@1x.png"
+            alt="icecream"
+            width="132"
+            height="139"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="modal-product--back"></div>
+    </div>
+
+    <ul class="macronutrients__list list">
+      <li class="macronutrients__item">
+        <div class="macronutrients__ellipse">
+          <div class="macronutrients__wrapper">
+            <span class="macronutrients__value">320</span>
+          </div>
+          <span class="macronutrients__type">kcal</span>
         </div>
+      </li>
+      <li class="macronutrients__item">
+        <div class="macronutrients__ellipse">
+          <div class="macronutrients__wrapper">
+            <span class="macronutrients__value">4g</span>
+          </div>
+          <span class="macronutrients__type">Protein</span>
+        </div>
+      </li>
+      <li class="macronutrients__item">
+        <div class="macronutrients__ellipse">
+          <div class="macronutrients__wrapper">
+            <span class="macronutrients__value">8,2g</span>
+          </div>
+          <span class="macronutrients__type">Fats</span>
+        </div>
+      </li>
+      <li class="macronutrients__item">
+        <div class="macronutrients__ellipse">
+          <div class="macronutrients__wrapper">
+            <span class="macronutrients__value">40,4g</span>
+          </div>
+          <span class="macronutrients__type">Carbs</span>
+        </div>
+      </li>
+    </ul>
 
-        <ul class="macronutrients__list list">
-            <li class="macronutrients__item">
-                <div class="macronutrients__ellipse">
-                    <div class="macronutrients__wrapper">
-                        <span class="macronutrients__value">320</span>
-                    </div>
-                    <span class="macronutrients__type">kcal</span>
-                </div>
-            </li>
-            <li class="macronutrients__item">
-                <div class="macronutrients__ellipse">
-                    <div class="macronutrients__wrapper">
-                        <span class="macronutrients__value">4g</span>
-                    </div>
-                    <span class="macronutrients__type">Protein</span>
-                </div>
-            </li>
-            <li class="macronutrients__item">
-                <div class="macronutrients__ellipse">
-                    <div class="macronutrients__wrapper">
-                        <span class="macronutrients__value">8,2g</span>
-                    </div>
-                    <span class="macronutrients__type">Fats</span>
-                </div>
-            </li>
-            <li class="macronutrients__item">
-                <div class="macronutrients__ellipse">
-                    <div class="macronutrients__wrapper">
-                        <span class="macronutrients__value">40,4g</span>
-                    </div>
-                    <span class="macronutrients__type">Carbs</span>
-                </div>
-            </li>
-        </ul>
-
-        <p class="modal-product__name">Ingredients</p>
+    <p class="modal-product__name">Ingredients</p>
 
     <div class="ingredients">
-        <ul class="ingredients__list list">
-        <li class="ingredients__item">Milk
-            <span class="ingredients__name"></span> 100ml
+      <ul class="ingredients__list list">
+        <li class="ingredients__item">
+          Milk <span class="ingredients__name"></span> 100ml
         </li>
-        <li class="ingredients__item">Belgian chocolate
-            <span class="ingredients__name"></span> 20g
+        <li class="ingredients__item">
+          Belgian chocolate <span class="ingredients__name"></span> 20g
         </li>
-        <li class="ingredients__item">Cream
-            <span class="ingredients__name"></span> 150 ml
+        <li class="ingredients__item">
+          Cream <span class="ingredients__name"></span> 150 ml
         </li>
-        <li class="ingredients__item">Cocoa powder
-            <span class="ingredients__name"></span> 30g
+        <li class="ingredients__item">
+          Cocoa powder <span class="ingredients__name"></span> 30g
         </li>
-        <li class="ingredients__item">Sugar
-            <span class="ingredients__name"></span> 40g
+        <li class="ingredients__item">
+          Sugar <span class="ingredients__name"></span> 40g
         </li>
-        <li class="ingredients__item">Vanilla sugar
-            <span class="ingredients__name"></span> 10g
+        <li class="ingredients__item">
+          Vanilla sugar <span class="ingredients__name"></span> 10g
         </li>
-    </ul></div>
-        
-        
-
-        <form class="modal__form" name="modal_form">
-            <div class="modal__group">
-                <input class="modal__field" type="text" name="user_name" id="user_name" placeholder="Name" required>
-                <input class="modal__field" type="tel" name="user_phone" id="user_phone" placeholder="Phone" required>
-                <textarea class="modal__message" name="user_message" id="user_message" rows="6"
-                    placeholder="Comment"></textarea>
-            </div>
-            <button class="btn modal__btn" type="submit">Submit</button>
-        </form>
-
+      </ul>
     </div>
+
+    <form class="modal__form" name="modal_form">
+      <div class="modal__group">
+        <input
+          class="modal__field"
+          type="text"
+          name="user_name"
+          id="product-modal-user_name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="modal__field"
+          type="tel"
+          name="user_phone"
+          id="product-modal-user_phone"
+          placeholder="Phone"
+          required
+        />
+        <textarea
+          class="modal__message"
+          name="user_message"
+          id="product-modal-user_message"
+          rows="6"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="btn modal__btn" type="submit">Submit</button>
+    </form>
+  </div>
 </div>

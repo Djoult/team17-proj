@@ -2,9 +2,7 @@
   <div class="modal modal-buy-now">
     <button class="modal__btn-close" data-buy-now-close>
       <svg class="modal__icon" width="100%" height="100%">
-        ,
         <use href="./images/icons.svg#icon-close"></use>
-        ,
       </svg>
     </button>
     <h3 class="modal__title">Buy now</h3>
@@ -19,11 +17,12 @@
               name="ice-cream"
               value="ice-cream"
             />
-            <div
+
+            <span
               class="product-modal__wrapper product-modal__wrapper--ice-cream"
             >
-              <h2 class="product-modal__title">ice cream</h2>
-            </div></label
+              <span class="product-modal__title">ice cream</span>
+            </span></label
           >
         </li>
         <li class="product-modal__item">
@@ -34,11 +33,11 @@
               name="ice-coffee"
               value="ice-coffee"
             />
-            <div
+            <span
               class="product-modal__wrapper product-modal__wrapper--ice-coffee"
             >
-              <h2 class="product-modal__title">ice coffee</h2>
-            </div></label
+              <span class="product-modal__title">ice coffee</span>
+            </span></label
           >
         </li>
         <li class="product-modal__item">
@@ -49,11 +48,11 @@
               name="milkshake"
               value="milkshake"
             />
-            <div
+            <span
               class="product-modal__wrapper product-modal__wrapper--milkshake"
             >
-              <h2 class="product-modal__title">milkshake</h2>
-            </div></label
+              <span class="product-modal__title">milkshake</span>
+            </span></label
           >
         </li>
       </ul>
@@ -65,7 +64,7 @@
           class="modal__field"
           type="text"
           name="user_name"
-          id="user_name"
+          id="buy-now-user_name"
           placeholder="Name"
           required
         />
@@ -73,14 +72,14 @@
           class="modal__field"
           type="tel"
           name="user_phone"
-          id="user_phone"
+          id="buy-now-user_phone"
           placeholder="Phone"
           required
         />
         <textarea
           class="modal__message"
           name="user_message"
-          id="user_message"
+          id="buy-now-user_message"
           rows="6"
           placeholder="Comment"
         ></textarea>
