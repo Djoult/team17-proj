@@ -140,6 +140,26 @@
   padding-bottom: 56px;
   border-radius: 24px;
 
+  	&:nth-child(1)::before,
+	&:nth-child(1)::after,
+	&:nth-child(2)::before,
+	&:nth-child(2)::after,
+	&:nth-child(3)::before,
+	&:nth-child(3)::after{
+		transition: transform $timing-function;
+	}
+
+	&:hover{
+		&:nth-child(1)::before,
+		&:nth-child(1)::after,
+		&:nth-child(2)::before,
+		&:nth-child(2)::after,
+		&:nth-child(3)::before,
+		&:nth-child(3)::after{
+			transform: scale(1.13);
+		}
+	}
+
   &:nth-child(1) {
     background-color: #aec6a5;
 

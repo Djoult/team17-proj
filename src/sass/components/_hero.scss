@@ -116,6 +116,8 @@
   font-size: 12px;
   line-height: calc(15 / 12);
 
+  transition: border-color $timing-function, color $timing-function;
+
   &:hover {
     border-color: $button-hover-color;
   }
@@ -143,6 +145,8 @@
 
   background-color: transparent;
   border: none;
+
+  transition: color $timing-function;
 
   &:focus {
     color: $light-color;
@@ -173,6 +177,9 @@
   @media screen and (min-width: $desktop) {
     right: 29%;
   }
+
+	animation: emergence-ice-cream 1800ms $timing-function-main;
+  
 }
 
 .hero__dots {
@@ -203,6 +210,8 @@
     bottom: 64px;
     left: 16px;
   }
+
+  animation: scroll-around 8s $timing-function-main 0ms infinite  ;
 }
 
 .hero__text {
