@@ -13,7 +13,7 @@
     margin-top: 83px;
     margin-bottom: 32px;
 
-    @media screen and (min-width=$tablet) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 40px;
       margin-top: 103px;
     }
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     gap: 82px;
-    @media screen and (min-width=$tablet) {
+    @media screen and (min-width: $tablet) {
       flex-direction: row;
       gap: 32px;
       justify-content: center;
@@ -35,24 +35,24 @@
 
   // .product-modal__item
 
-  &__item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 132px;
-    max-width: 136px;
-    min-width: 132px;
-    min-height: 135px;
+  // &__item {
+  //   position: relative;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: end;
+  //   align-items: center;
+  //   margin: 0 auto;
+  //   max-width: 132px;
+  //   max-width: 136px;
+  //   min-width: 132px;
+  //   min-height: 135px;
 
-    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-    border-radius: 15px;
-    @media screen and (min-width=$tablet) {
-      margin: 0;
-    }
-  }
+  //   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  //   border-radius: 15px;
+  //   @media screen and (min-width: $tablet) {
+  //     margin: 0;
+  //   }
+  // }
 
   // .product-modal__title
 
@@ -67,8 +67,35 @@
     color: $text-color;
   }
 }
-.product-modal__item {
-  &:nth-child(1) {
+.product-modal__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.product-modal__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 132px;
+  max-width: 136px;
+  min-width: 132px;
+  min-height: 135px;
+
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+  }
+
+  &--ice-cream {
     border: 2px solid #96af8c;
     &::before {
       content: '';
@@ -89,7 +116,7 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/products/Img1_m@2x.jpg);
       }
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         // top: -63px;
         background-image: url(../images/products/Img1_t@1x.jpg);
         @media (min-device-pixel-ratio: 2),
@@ -114,14 +141,14 @@
         #d9d9d9;
       box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
       border-radius: 100px;
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         // top: -56px;
       }
     }
   }
-  &:nth-child(2) {
+  &--ice-coffee {
     border: 2px solid #efd478;
-    background-color: #efd478;
+
     &::before {
       content: '';
       position: absolute;
@@ -141,7 +168,7 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/products/Img2_m@2x.jpg);
       }
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         top: -63px;
         background-image: url(../images/products/Img2_t@1x.jpg);
         @media (min-device-pixel-ratio: 2),
@@ -166,11 +193,11 @@
         #d9d9d9;
       box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
       border-radius: 100px;
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
       }
     }
   }
-  &:nth-child(3) {
+  &--milkshake {
     border: 2px solid #d6936d;
     &::before {
       content: '';
@@ -191,7 +218,7 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/products/Img3_m@2x.jpg);
       }
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         // top: -63px;
         background-image: url(../images/products/Img3_t@1x.jpg);
         @media (min-device-pixel-ratio: 2),
@@ -221,4 +248,14 @@
       }
     }
   }
+}
+
+.product-modal__checkbox:checked + .product-modal__wrapper--ice-cream {
+  background-color: #96af8c;
+}
+.product-modal__checkbox:checked + .product-modal__wrapper--ice-coffee {
+  background-color: #efd478;
+}
+.product-modal__checkbox:checked + .product-modal__wrapper--milkshake {
+  background-color: #d6936d;
 }
