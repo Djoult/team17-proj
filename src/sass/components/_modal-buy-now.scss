@@ -2,10 +2,8 @@
   z-index: 1001;
 }
 .modal.modal-buy-now {
-  @media screen and (max-width: $tablet) {
-    height: 85vh;
-    overflow-y: scroll;
-  }
+  max-height: 85vh;
+  overflow-y: scroll;
 }
 .product-modal {
   // .product-modal__wraper

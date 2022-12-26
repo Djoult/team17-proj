@@ -13,11 +13,11 @@
     text-align: center;
     text-transform: uppercase;
     color: $text-color;
-    @media screen and (min-width=$tablet) {
+    @media screen and (min-width: $tablet) {
       font-size: 22px;
       line-height: calc(27 / 22);
     }
-    @media screen and (min-width=$desktop) {
+    @media screen and (min-width: $desktop) {
       font-size: 30px;
       line-height: calc(37 / 30);
     }
@@ -34,12 +34,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $text-color;
-    @media screen and (min-width=$tablet) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 200px;
       font-size: 34px;
       line-height: calc(43 / 34);
     }
-    @media screen and (min-width=$desktop) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 303px;
       font-size: 36px;
       line-height: calc(45 / 36);
@@ -58,11 +58,11 @@
     display: flex;
     flex-direction: column;
     gap: 168px;
-    @media screen and (min-width=$tablet) {
+    @media screen and (min-width: $tablet) {
       flex-direction: row;
       gap: 16px;
     }
-    @media screen and (min-width=$desktop) {
+    @media screen and (min-width: $desktop) {
       flex-direction: row;
       gap: 29px;
     }
@@ -77,11 +77,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $text-color;
-    @media screen and (min-width=$tablet) {
+    @media screen and (min-width: $tablet) {
       font-size: 22px;
       line-height: calc(27 / 22);
     }
-    @media screen and (min-width=$desktop) {
+    @media screen and (min-width: $desktop) {
       margin-bottom: 66px;
       font-size: 30px;
       line-height: calc(37 / 30);
@@ -96,11 +96,11 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: $text-color;
-    @media screen and (min-width=$tablet) {
+    @media screen and (min-width: $tablet) {
       padding: 0 26;
     }
 
-    @media screen and (min-width=$desktop) {
+    @media screen and (min-width: $desktop) {
       font-size: 16px;
       padding: 0 64;
     }
@@ -117,10 +117,10 @@
     background-color: transparent;
     border-style: none;
     cursor: pointer;
-    @media screen and (min-width=$tablet) {
+    @media screen and (min-width: $tablet) {
       bottom: 12px;
     }
-    @media screen and (min-width=$desktop) {
+    @media screen and (min-width: $desktop) {
       bottom: 60px;
     }
   }
@@ -140,25 +140,25 @@
   padding-bottom: 56px;
   border-radius: 24px;
 
-  	&:nth-child(1)::before,
-	&:nth-child(1)::after,
-	&:nth-child(2)::before,
-	&:nth-child(2)::after,
-	&:nth-child(3)::before,
-	&:nth-child(3)::after{
-		transition: transform $timing-function;
-	}
+  &:nth-child(1)::before,
+  &:nth-child(1)::after,
+  &:nth-child(2)::before,
+  &:nth-child(2)::after,
+  &:nth-child(3)::before,
+  &:nth-child(3)::after {
+    transition: transform $timing-function;
+  }
 
-	&:hover{
-		&:nth-child(1)::before,
-		&:nth-child(1)::after,
-		&:nth-child(2)::before,
-		&:nth-child(2)::after,
-		&:nth-child(3)::before,
-		&:nth-child(3)::after{
-			transform: scale(1.13);
-		}
-	}
+  &:hover {
+    &:nth-child(1)::before,
+    &:nth-child(1)::after,
+    &:nth-child(2)::before,
+    &:nth-child(2)::after,
+    &:nth-child(3)::before,
+    &:nth-child(3)::after {
+      transform: scale(1.13);
+    }
+  }
 
   &:nth-child(1) {
     background-color: #aec6a5;
@@ -185,7 +185,7 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/products/Img1_m@2x.jpg);
       }
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         top: -120px;
         background-image: url(../images/products/Img1_t@1x.jpg);
         @media (min-device-pixel-ratio: 2),
@@ -195,7 +195,7 @@
           background-image: url(../images/products/Img1_t@2x.jpg);
         }
       }
-      @media screen and (min-width=$desktop) {
+      @media screen and (min-width: $desktop) {
         top: -183px;
         width: 302px;
         height: 302px;
@@ -223,10 +223,10 @@
         #d9d9d9;
       box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
       border-radius: 100px;
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         top: -108px;
       }
-      @media screen and (min-width=$desktop) {
+      @media screen and (min-width: $desktop) {
         top: -167px;
         width: 302px;
         height: 302px;
@@ -259,7 +259,7 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/products/Img2_m@2x.jpg);
       }
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         top: -120px;
         background-image: url(../images/products/Img2_t@1x.jpg);
         @media (min-device-pixel-ratio: 2),
@@ -269,7 +269,7 @@
           background-image: url(../images/products/Img2_t@2x.jpg);
         }
       }
-      @media screen and (min-width=$desktop) {
+      @media screen and (min-width: $desktop) {
         top: -183px;
         width: 302px;
         height: 302px;
@@ -297,10 +297,10 @@
         #d9d9d9;
       box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
       border-radius: 100px;
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         top: -108px;
       }
-      @media screen and (min-width=$desktop) {
+      @media screen and (min-width: $desktop) {
         top: -167px;
         width: 302px;
         height: 302px;
@@ -333,7 +333,7 @@
         (min-resolution: 2dppx) {
         background-image: url(../images/products/Img3_m@2x.jpg);
       }
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         top: -120px;
         background-image: url(../images/products/Img3_t@1x.jpg);
         @media (min-device-pixel-ratio: 2),
@@ -343,7 +343,7 @@
           background-image: url(../images/products/Img3_t@2x.jpg);
         }
       }
-      @media screen and (min-width=$desktop) {
+      @media screen and (min-width: $desktop) {
         top: -183px;
         width: 302px;
         height: 302px;
@@ -371,10 +371,10 @@
         #d9d9d9;
       box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
       border-radius: 100px;
-      @media screen and (min-width=$tablet) {
+      @media screen and (min-width: $tablet) {
         top: -108px;
       }
-      @media screen and (min-width=$desktop) {
+      @media screen and (min-width: $desktop) {
         top: -167px;
         width: 302px;
         height: 302px;
@@ -382,7 +382,7 @@
       }
     }
   }
-  @media screen and (min-width=$tablet) {
+  @media screen and (min-width: $tablet) {
     padding-top: 108px;
     padding-bottom: 52px;
     min-width: 224px;
@@ -390,7 +390,7 @@
     border-radius: 15.7808px;
     // @include card-set-item(3, 16px);
   }
-  @media screen and (min-width=$desktop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 165px;
     padding-bottom: 100px;
     min-height: 536px;
