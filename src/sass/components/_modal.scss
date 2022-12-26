@@ -1,186 +1,185 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: scroll;
-    width: 100vw;
-    height: 100vh;
-    z-index: 998;
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
-    scale: 1.5;
-    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  scale: 1.5;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 28px;
-    z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 28px;
+  z-index: 999;
 
-    width: calc(100% - 30px);
-    max-width: 480px; 
-    
+  width: calc(100% - 30px);
+  max-width: 480px;
 
-    background: $light-color;
-    border: 2px solid $accent-color;
-    border-radius: 10px;
+  background: $light-color;
+  border: 2px solid $accent-color;
+  border-radius: 10px;
 
-    scale: 1;
-    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  scale: 1;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    // @media screen and (max-width:$tablet) {
-    //     height: 85vh;
-    //     overflow-y: scroll;
-    // }
+  // @media screen and (max-width:$tablet) {
+  //     height: 85vh;
+  //     overflow-y: scroll;
+  // }
 
-    @media screen and (min-width:$tablet) {
-        min-width: 568px;
-        padding-top: 32px;
-        padding-bottom: 32px;
-}
+  @media screen and (min-width: $tablet) {
+    min-width: 568px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .modal--about {
-    @media screen and (min-width:768px) {
-        padding-left: 60px;
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
     padding-right: 60px;
-    }
+  }
 }
 
 .modal__btn-close {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    padding: 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 
-    background: $white-color;
-    
-    border: $white-color;
-    fill: $text-color;
+  background: $white-color;
 
-    &:hover,
-    &:focus {
+  border: $white-color;
+  fill: $text-color;
+
+  &:hover,
+  &:focus {
     cursor: pointer;
     fill: black;
-}
+  }
 
-@media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     width: 24px;
     height: 24px;
+  }
 }
-}
-
-
 
 .modal__ikon {
-    fill: $text-color;
-    @media screen and (min-width:$tablet) {
-        width: 24px;
-        height: 24px;
-    }
+  fill: $text-color;
+  @media screen and (min-width: $tablet) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .modal__box {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__title {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 
-font-family: $additional-font-family;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: calc(24/16);
+  font-family: $additional-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
 
-color: $text-color;
+  color: $text-color;
 
-@media screen and (min-width:$tablet) {
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
-    line-height: calc(28/20);
-}
+    line-height: calc(28 / 20);
+  }
 }
 
 .modal__field {
-    display: block;
-    background-color: rgba(248, 210, 78, 0.1);
-    color: $text-color;
-    border: 1px solid $main-color;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 32px;
-    width: 224px;
-    padding: 12px 7px;
-    margin-bottom: 12px;
+  display: block;
+  background-color: rgba(248, 210, 78, 0.1);
+  color: $text-color;
+  border: 1px solid $main-color;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 32px;
+  width: 224px;
+  padding: 12px 7px;
+  margin-bottom: 12px;
 
-    @media screen and (min-width:$tablet) {
-        height: 42px;
-        width: 368px;
-        padding: 16px 11px;
-        margin-bottom: 16px;
-    }
-    
+  @media screen and (min-width: $tablet) {
+    height: 42px;
+    width: 368px;
+    padding: 16px 11px;
+    margin-bottom: 16px;
+  }
 }
 
 .modal__field::placeholder {
-    color: $text-color;
-    font-size: 12px;
-    line-height: 1.4;
+  color: $text-color;
+  font-size: 12px;
+  line-height: 1.4;
 
-    @media screen and (min-width:$tablet) {
-        font-size: 14px;
-            line-height: 1.4;
-        }
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 .modal__message {
-        display: block;
-        background-color: rgba(248, 210, 78, 0.1);
-        border: 1px solid $main-color;
-        border-radius: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        height: 64px;
-        width: 224px;
-        padding: 12px 7px;
-        color: $text-color;
+  display: block;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid $main-color;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 64px;
+  width: 224px;
+  padding: 12px 7px;
+  color: $text-color;
 
-        @media screen and (min-width:$tablet) {
-                height: 84px;
-                width: 368px;
-                padding: 16px 11px;
-                margin-bottom: 32px;
-            }
+  //Ihor
+  resize: none;
+
+  @media screen and (min-width: $tablet) {
+    height: 84px;
+    width: 368px;
+    padding: 16px 11px;
+    margin-bottom: 32px;
+  }
 }
 .modal__message::placeholder {
-    color: $text-color;
-    font-size: 12px;
+  color: $text-color;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
     line-height: 1.4;
-    
-     @media screen and (min-width:$tablet) {
-        font-size: 14px;
-        line-height: 1.4;
-    }
+  }
 }
