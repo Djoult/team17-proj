@@ -1,235 +1,164 @@
 .modal.product-modal {
-    max-height: 85vh;
-    overflow-y: scroll;
-    padding: 28px 20px;
+  max-height: 85vh;
+  overflow-y: scroll;
+  //   padding: 28px 20px;
 
-    @media screen and (min-width: $tablet) {
-        padding: 32px 40px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding: 32px 40px;
+  }
 }
-
-.modal__close-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 20px;
-    margin-right: 12px;
-    margin-top: 12px;
-    border-radius: 50%;
-    border: none;
-    background-color: inherit;
-
-    @media screen and (min-width:$tablet) {
-        height: 24px;
-    }
-}
-
-.modal__close-icon {
-    fill: $text-color;
-    width: 11px;
-    height: 11px;
-
-    @media screen and (min-width:$tablet) {
-        width: 13px;
-        height: 13px;
-    }
+.modal__title--ingridient {
+  font-size: 20px;
+  line-height: 28px;
+  // margin-bottom: 30px;
 }
 
 .modal-product__subtitle {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    color: $text-color;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
-    font-family: $additional-font-family;
-    width: 142px;
-    font-size: 20px;
-    line-height: calc(28/20);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: $text-color;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  font-family: $additional-font-family;
 
-    @media screen and (min-width: 769px) {
-        margin-bottom: 24px;
-        width: 273px;
-        font-size: 20px;
-        line-height: calc(28/20);
-    }
+  font-size: 20px;
+  line-height: calc(28 / 20);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+
+    line-height: calc(28 / 20);
+  }
 }
 
-
-
 .modal-product__item {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 31px;
-    margin-left: auto;
-    margin-right: auto;
-       
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-product--front {
-    z-index: 2;
+  z-index: 2;
 }
 
 .modal-product--back {
-    position: absolute;
-    top: 7px;
-    z-index: 1;
-    width: 132px;
-    height: 132px;
-    border-radius: 50%;
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-}
-
-.product-modal__wrapper {
-    margin-bottom: 22px;
-
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 32px;
-    }
-}
-
-.product-modal__wrapper {
-    width: 224px;
-    height: 200px;
-
-    @media screen and (min-width: $tablet) {
-        width: 448px;
-        height: 260px;
-    }
+  position: absolute;
+  top: 7px;
+  z-index: 1;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 .macronutrients__list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 .macronutrients__item {
-    display: block;
-
+  display: block;
 }
 
 .macronutrients__ellipse {
-position: relative;
-width: 65px;
-height: 90px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-
-border: 2px solid #9CBE8F;
-border-radius: 40px;
+  position: relative;
+  //   width: 65px;
+  //   height: 90px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
 }
 
 .macronutrients__wrapper {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 53px;
-height: 53px;
-background: #9CBE8F;
-border: 2px solid #9CBE8F;
-box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
 }
 
 .macronutrients__value {
-    font-size: 12px;
-    line-height: calc(15/12);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  border: 2px solid #9cbe8f;
+
+  //   font-size: 12px;
+  //   line-height: calc(15 / 12);
 }
 
 .macronutrients__type {
-align-self: flex-start;
-font-size: 12px;
-line-height: calc(15/12);
+  align-self: flex-start;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  //   display: flex;
+  //   align-items: center;
+  //   text-align: center;
+  //   font-size: 12px;
+  //   line-height: calc(15 / 12);
 }
 
 .modal-product__name {
-    margin-bottom: 24px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(28/20);
-    align-items: center;
-    text-align: center;
-    color: $text-color;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  align-items: center;
+  text-align: center;
+  color: $text-color;
 }
 
 .ingredients {
-    display: flex;
-    margin-bottom: 48px;
-    width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
- .ingredients__list {
-    width: 100%;
- }
+.ingredients__list {
+  width: 100%;
+}
 
 .ingredients__name {
-    display: block;
-    flex-grow: 1;
-    height: 1px;
-    background-color: $light-color;
+  display: block;
+  flex-grow: 1;
+  height: 1px;
+  background-color: $light-color;
 }
 
 .ingredients__item {
-
-    display: flex;
-    font-size: 14px;
-    line-height: 1.76;
-    letter-spacing: 0.04em;
+  display: flex;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
 }
 
 .ingredients__item:not(:last-child) {
-    margin-bottom: 11px;
+  margin-bottom: 11px;
 }
-
-
-.modal .modal__btn-close {
-    margin: 0;
-}
-
-.product-modal__button {
-    display: block;
-    margin: 0 auto;
-    padding: 12px 34px;
-    background-color: $accent-color;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    color: $text-color;
-
-    @media screen and (min-width: $tablet) {
-        font-size: 14px;
-        line-height: calc(17 / 14);
-    }
-
-    @include transition(background-color, color);
-
-    &:hover {
-        background-color: $button-hover-color;
-    }
-
-    &:focus {
-        background-color: $button-hover-color;
-        color: $white-color;
-    }
-
-    &:disabled {
-        background-color: $disabled-color;
-    }
-}
-
-.modal__message {
-    resize: none;
-}
-
