@@ -26,30 +26,20 @@
 
 .advantages__item {
   width: 100%;
-  cursor: pointer;
+  // cursor: pointer;
   @media screen and (min-width: $tablet) {
     width: calc((100% - 6 * 32px) / 3);
     margin: 32px;
   }
 }
-.advantages__item:hover {
-  animation: animate125 3000ms infinite 1000ms;
+.advantages__item:hover .advantages__title {
+  animation: animate125 1000ms;
   animation-iteration-count: 1;
-  content: "scale(1.25)";
+  // animation: animate125 3000ms infinite 1000ms;
+  // animation-iteration-count: 1;
+  // content: 'scale(1.25)';
 }
-@keyframes animate125 {
-  0% {
-    transform: scale(1);
-  }
 
-  50% {
-    transform: scale(1.25);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 .advantages__item::before {
   display: block;
   margin-left: auto;
@@ -70,7 +60,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .advantages__item:nth-child(1)::before {
   background-image: url('../images/advantages/cow_1х.png');
