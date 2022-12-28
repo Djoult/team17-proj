@@ -65,32 +65,25 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  padding: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
   width: 20px;
   height: 20px;
-
-  background: $white-color;
-
-  border: $white-color;
-  fill: $text-color;
-
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    fill: black;
-  }
-
+  padding: 0;
+  background: transparent;
+  border: none;
   @media screen and (min-width: $tablet) {
     width: 24px;
     height: 24px;
   }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
-.modal__ikon {
+.modal__icon {
+  width: 20px;
+  height: 20px;
   fill: $text-color;
   @media screen and (min-width: $tablet) {
     width: 24px;
@@ -105,13 +98,18 @@
 .modal__title {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
 
   font-family: $additional-font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
-
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: auto;
   color: $text-color;
 
   @media screen and (min-width: $tablet) {
@@ -129,13 +127,18 @@
   margin-left: auto;
   margin-right: auto;
   height: 32px;
-  width: 224px;
+  width: 100%;
+  max-width: 310px;
   padding: 12px 7px;
   margin-bottom: 12px;
 
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+
   @media screen and (min-width: $tablet) {
     height: 42px;
-    width: 368px;
+    max-width: 368px;
     padding: 16px 11px;
     margin-bottom: 16px;
   }
@@ -158,17 +161,17 @@
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 24px;
   height: 64px;
-  width: 224px;
+  width: 100%;
+  max-width: 310px;
   padding: 12px 7px;
   color: $text-color;
-
-  //Ihor
   resize: none;
 
   @media screen and (min-width: $tablet) {
     height: 84px;
-    width: 368px;
+    max-width: 368px;
     padding: 16px 11px;
     margin-bottom: 32px;
   }
@@ -181,5 +184,34 @@
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.4;
+  }
+}
+.modal__button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 34px;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: $text-color;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+
+  @include transition(background-color, color);
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+  &:focus {
+    background-color: $button-hover-color;
+    color: $white-color;
+  }
+  &:disabled {
+    background-color: $disabled-color;
   }
 }

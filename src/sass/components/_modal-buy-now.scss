@@ -82,10 +82,10 @@
   justify-content: end;
   align-items: center;
   margin: 0 auto;
-  max-width: 132px;
-  max-width: 136px;
-  min-width: 132px;
-  min-height: 135px;
+  // max-width: 132px;
+  // max-width: 136px;
+  width: 132px;
+  height: 135px;
 
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15px;
@@ -256,4 +256,7 @@
 }
 .product-modal__checkbox:checked + .product-modal__wrapper--milkshake {
   background-color: #d6936d;
+}
+.product-modal__label {
+  margin: 0;
 }
