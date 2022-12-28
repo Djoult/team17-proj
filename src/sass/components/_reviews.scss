@@ -12,6 +12,7 @@
   @include alignment(center, center);
   flex-direction: column;
   gap: 32px;
+  z-index: 10;
 }
 
 .reviews__wrapper {

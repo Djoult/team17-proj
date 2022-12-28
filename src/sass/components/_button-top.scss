@@ -1,0 +1,34 @@
+.btn-up {
+  position: fixed;
+  z-index: 10000;
+  background-color: $main-color;
+  opacity: 50%;
+  right: 20px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  @include transition(background-color);
+  &:hover, &:focus{
+    background-color: $button-hover-color;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+  .btn-up_hide {
+    display: none;
+  }
+.btn-up__logo {
+  fill: white;
+  @media screen and (min-width: 1200px) {
+    width: 40px;
+    height: 40px;
+  }
+}
