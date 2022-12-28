@@ -1,8 +1,9 @@
 <div data-contacts-modal class="backdrop is-hidden">
+  contacts-
   <div class="modal contacts-modal">
     <button data-contacts-modal-close class="modal__btn-close">
-      <svg class="modal__icon" width="100%" height="100%">
-        <use href="./images/icons.svg#icon-close"></use>
+      <svg class="modal__icon">
+        <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <p class="modal__title contacts-modal__title"><b>Our Locations</b></p>
@@ -18,7 +19,7 @@
     </div>
     <button
       onclick="window.open('https://goo.gl/maps/u2gcSkghsJwzyx9RA');"
-      class="btn contacts-modal__button"
+      class="btn modal__button"
       type="button"
     >
       Open map
