@@ -2,6 +2,9 @@
   0% {
     opacity: 1;
   }
+  0% {
+    opacity: 1;
+  }
 
   17% {
     opacity: 1;
@@ -40,14 +43,5 @@
   }
   360% {
     scale: (1);
-  }
-}
-
-@keyframes arrow-blink {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
   }
 }
