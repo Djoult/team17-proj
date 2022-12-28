@@ -1,44 +1,53 @@
 @keyframes cf4FadeInOut {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    17% {
-        opacity: 1;
-    }
+  17% {
+    opacity: 1;
+  }
 
-    25% {
-        opacity: 0;
-    }
+  25% {
+    opacity: 0;
+  }
 
-    92% {
-        opacity: 0;
-    }
+  92% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes scroll-around{
-	 0% {
-    	transform: rotate(0deg);
-	  }
+@keyframes scroll-around {
+  0% {
+    transform: rotate(0deg);
+  }
 
- 	 100% {
- 	   transform: rotate(360deg);
- 	 }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes emergence-ice-cream {
-	0%{
-		transform: translateX(55%) scale(0.6);
-	}
-	70%{
-		transform: translateX(65%);
-		scale: (1.2);
-	}
-	360%{
-		scale: (1);
-	}
+  0% {
+    transform: translateX(55%) scale(0.6);
+  }
+  70% {
+    transform: translateX(65%);
+    scale: (1.2);
+  }
+  360% {
+    scale: (1);
+  }
+}
+
+@keyframes arrow-blink {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
