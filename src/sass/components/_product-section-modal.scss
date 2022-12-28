@@ -7,7 +7,7 @@
     padding: 32px 40px;
   }
 }
-.modal__title--ingridient {
+.modal__title--ingredient {
   font-size: 20px;
   line-height: 28px;
   @media screen and (min-width: $tablet) {
@@ -15,25 +15,25 @@
   }
 }
 
-.modal-product__subtitle {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  color: $text-color;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
-  font-family: $additional-font-family;
+// .modal-product__subtitle {
+//   display: flex;
+//   text-align: center;
+//   align-items: center;
+//   color: $text-color;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 24px;
+//   font-family: $additional-font-family;
 
-  font-size: 20px;
-  line-height: calc(28 / 20);
+//   font-size: 20px;
+//   line-height: calc(28 / 20);
 
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 24px;
+//   @media screen and (min-width: $tablet) {
+//     margin-bottom: 24px;
 
-    line-height: calc(28 / 20);
-  }
-}
+//     line-height: calc(28 / 20);
+//   }
+// }
 
 .modal-product__item {
   position: relative;
