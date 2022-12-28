@@ -11,6 +11,55 @@
   }
   background-color: $main-color;
 }
+.advantages__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -32px;
+  }
+}
+.advantages__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 28px;
+  }
+}
+
+.advantages__item {
+  width: 100%;
+  // cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 6 * 32px) / 3);
+    margin: 32px;
+  }
+}
+.advantages__item:hover .advantages__title {
+  animation: animate125 1000ms;
+  animation-iteration-count: 1;
+  // animation: animate125 3000ms infinite 1000ms;
+  // animation-iteration-count: 1;
+  // content: 'scale(1.25)';
+}
+
+.advantages__item::before {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+  align-content: center;
+  content: ' ';
+  width: 50px;
+  height: 50px;
+  background-color: $accent-color;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .advantages__item:nth-child(1)::before {
   background-image: url('../images/advantages/cow_1х.png');
@@ -81,44 +130,4 @@
     letter-spacing: 0.02em;
     width: 250px;
   }
-}
-.advantages__list {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -32px;
-  }
-}
-.advantages__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 28px;
-  }
-}
-
-.advantages__item {
-  width: 100%;
-  @media screen and (min-width: $tablet) {
-    width: calc((100% - 6 * 32px) / 3);
-    margin: 32px;
-  }
-}
-.advantages__item::before {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 16px;
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 32px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 40px;
-  }
-  align-content: center;
-  content: ' ';
-  width: 50px;
-  height: 50px;
-  background-color: $accent-color;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
