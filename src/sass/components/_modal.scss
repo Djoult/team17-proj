@@ -219,28 +219,34 @@
   position: relative;
   max-width: 310px;
   margin: 0 auto;
+  @media screen and (min-width: $tablet) {
+    max-width: 368px;   
+  }
 }
-input:not(:placeholder-shown):required:invalid {
- border-color: #8b0000;
+.modal-box__input:not(:placeholder-shown):required:invalid {
+  border-color: #8b0000;
 }
-input:not(:placeholder-shown):required:valid{
+.modal-box__input:not(:placeholder-shown):required:valid {
   border-color: #009000;
 }
 
-input:valid {
- border-color: #009000;
+.modal-box__input:valid {
+  border-color: #009000;
 }
 
-input:invalid + span::after {
+.modal-box__input:invalid + span::after {
   position: absolute;
   top: 8px;
   left: 310px;
   content: '✖';
   padding-left: 5px;
   color: #8b0000;
+  @media screen and (min-width: $tablet) {
+    left: 368px;   
+  }
 }
 
-input:valid + span::after {
+.modal-box__input:valid + span::after {
   position: absolute;
   top: 8px;
   left: 310px;
@@ -248,4 +254,7 @@ input:valid + span::after {
   content: '✓';
   padding-left: 5px;
   color: #009000;
+  @media screen and (min-width: $tablet) {
+   left: 368px;   
+  }
 }
