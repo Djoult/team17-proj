@@ -92,7 +92,7 @@
   // font-family: 'Montserrat';
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 22;
+  line-height: 1.22;
   text-align: center;
   letter-spacing: 0.04em;
   color: $light-color;
@@ -112,7 +112,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 1, 6;
+  line-height: 1.6;
   text-align: center;
   color: $light-color;
   width: 230px;
@@ -120,13 +120,13 @@
   @media screen and (min-width: $tablet) {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1, 74;
+    line-height: 1.74;
     width: 145px;
   }
   @media screen and (min-width: $desktop) {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1, 76;
+    line-height: 1.76;
     letter-spacing: 0.02em;
     width: 250px;
   }
