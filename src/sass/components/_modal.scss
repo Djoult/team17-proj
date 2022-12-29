@@ -128,7 +128,7 @@
   margin-right: auto;
   height: 32px;
   width: 100%;
-  max-width: 310px;
+  // max-width: 310px;
   padding: 12px 7px;
   margin-bottom: 12px;
 
@@ -138,7 +138,7 @@
 
   @media screen and (min-width: $tablet) {
     height: 42px;
-    max-width: 368px;
+    // max-width: 368px;
     padding: 16px 11px;
     margin-bottom: 16px;
   }
@@ -220,7 +220,7 @@
   max-width: 310px;
   margin: 0 auto;
   @media screen and (min-width: $tablet) {
-    max-width: 368px;   
+    max-width: 368px;
   }
 }
 .modal-box__input:not(:placeholder-shown):required:invalid {
@@ -236,25 +236,27 @@
 
 .modal-box__input:invalid + span::after {
   position: absolute;
-  top: 8px;
-  left: 310px;
+  top: 50%;
+  left: 100%;
+  transform: translate(0,-50%);
   content: '✖';
   padding-left: 5px;
   color: #8b0000;
-  @media screen and (min-width: $tablet) {
-    left: 368px;   
-  }
+  // @media screen and (min-width: $tablet) {
+  //   left: 368px;
+  // }
 }
 
 .modal-box__input:valid + span::after {
   position: absolute;
-  top: 8px;
-  left: 310px;
+  top: 50%;
+  transform: translate(0,-50%);
+  left: 100%;
   position: absolute;
   content: '✓';
   padding-left: 5px;
   color: #009000;
-  @media screen and (min-width: $tablet) {
-   left: 368px;   
-  }
+  // @media screen and (min-width: $tablet) {
+  //   left: 368px;
+  // }
 }
