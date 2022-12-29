@@ -135,7 +135,9 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
-
+  &:not(:placeholder-shown):required:invalid {
+    border-color: rgb(255, 0, 13);
+  }
   @media screen and (min-width: $tablet) {
     height: 42px;
     max-width: 368px;

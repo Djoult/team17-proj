@@ -103,6 +103,8 @@
           name="user_name"
           id="product-modal-user_name"
           placeholder="Name"
+          pattern="[a-z]{1,15}"
+          title="Username should only contain lowercase letters. e.g. john"
           required
         />
         <input
@@ -111,6 +113,8 @@
           name="user_phone"
           id="product-modal-user_phone"
           placeholder="Phone"
+          pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$"
+          title="tel format (ХХХ)XXX-XX-XX"
           required
         />
         <textarea
