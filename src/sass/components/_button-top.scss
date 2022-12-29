@@ -1,18 +1,19 @@
 .btn-up {
   position: fixed;
   z-index: 10000;
-  background-color: $main-color;
-  opacity: 50%;
-  right: 40px;
-  bottom: 40px;
-  border-radius: 50%;
-  // border: 1px solid #fff;
+  right: 15px;
+  bottom: 20px;
+  opacity: 70%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  // border: 1px solid #fff;
   width: 60px;
   height: 60px;
+  padding: 15px;
+  background-color: $main-color;
+  border-radius: 50%;
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
   @include transition(background-color);
   &:hover,
@@ -20,16 +21,12 @@
     background-color: $button-hover-color;
   }
   @media screen and (min-width: $tablet) {
-    right: 50px;
+    right: 40px;
     bottom: 60px;
-    width: 70px;
-    height: 70px;
   }
   @media screen and (min-width: $desktop) {
-    right: 80px;
-    bottom: 80px;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
 }
 .btn-up_hide {
@@ -40,23 +37,16 @@
   align-items: center;
   justify-content: center;
   fill: rgb(255, 255, 255);
-
-  @media screen and (min-width: 1200px) {
-    // width: 140px;
-    // height: 140px;
-  }
 }
 .arrow-1,
 .arrow-2 {
+  box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.25);
   animation-name: arrow-blink;
-  animation-duration: 800ms;
+  animation-duration: 600ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: alternate-reverse;
 }
 .arrow-1 {
-  // animation-delay: 100ms;
-}
-.arrow-2 {
-  animation-delay: 400ms;
+  animation-delay: 180ms;
 }
